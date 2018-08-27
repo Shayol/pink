@@ -1,0 +1,16 @@
+.picture {
+    background-image: url("../img/back-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -69px;
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        background: url("../img/phone-screen-hero-mobile.png") 50% 78%, url("../img/phone-hero-mobile.png") 93.5% 118%;
+        background-repeat: no-repeat;
+        background-size: auto, auto;
+        height: 100%;
+        width: 320px;
+    }
+}

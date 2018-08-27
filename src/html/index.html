@@ -11,18 +11,17 @@
 <body>
     <div class="container">
         <div class="hero">
-            <ul class="menu">
-                <li class="menu__item">
-                    <div class="wrapper">
-                        <a href="" class="menu__link">
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="../img/logo-desktop.png">
-                                <source media="(min-width: 660px)" srcset="../img/logo-tablet.png">
-                                <img src="../img/logo-mobile.png" alt="logo" class="menu__logo">
-                            </picture>
+            <ul class="hero__menu menu menu--open">
+                <li class="menu__item menu__item--top">
+                    <div class="wrapper wrapper--menu">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="../img/logo-desktop.png">
+                            <source media="(min-width: 660px)" srcset="../img/logo-tablet.png">
+                            <img src="../img/logo-mobile.png" alt="logo" class="menu__logo">
+                        </picture>
 
-                        </a>
                         <img src="../img/close.png" alt="" class="menu__close-icon">
+                        <img src="../img/open.png" alt="" class="menu__open-icon">
                     </div>
                 </li>
                 <li class="menu__item">
@@ -38,42 +37,54 @@
                     <a href="" class="menu__link">HTML Academy</a>
                 </li>
             </ul>
-            <div class="hero__picture">
-
+            <div class="hero__picture picture">
+                <div class="picture__content"></div>
             </div>
             <div class="hero__download download">
-                <div class="wrapper">
+                <div class="wrapper download__content">
                     <div class="download__button">Скачать приложение</div>
                     <div class="download__os">
-                        <img src="" alt="" class="download__icon">
-                        <img src="" alt="" class="download__icon">
-                        <img src="" alt="" class="download__icon">
+                        <img src="../img/apple.png" alt="" class="download__icon">
+                        <img src="../img/android.png" alt="" class="download__icon">
+                        <img src="../img/microsoft.png" alt="" class="download__icon">
                     </div>
                     <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="wrapper">
-                <p class="section__text.section__text--big">Устали от серости
+        <div class="section section--information information">
+            <div class="wrapper information__content">
+                <p class="section__text section__text--big">Устали от серости
                     <br class="break break--mobile"> мегаполиса?</p>
-                <p class="section__text.section__text--big">Нам есть, что вам
+                <p class="section__text section__text--big">Нам есть, что вам
                     <br> предложить!
                 </p>
             </div>
-            <div class="section section--grey">
-                <div class="section__item">
-                    <h2 class="section__header">Поднимает настроение</h2>
+        </div>
+        <div class="section section--description description section--grey">
+            <div class="wrapper description__content">
+                <div class="section__item description__item">
+                    <h2 class="section__header description__header">Поднимает настроение</h2>
                     <p class="section__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </div>
-                <div class="section__item">
-                    <h2 class="section__header">Меняет мир вокруг</h2>
+                <div class="section__item description__item">
+                    <h2 class="section__header description__header">Меняет мир вокруг</h2>
                     <p class="section__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </div>
-                <div class="section__item">
-                    <h2 class="section__header">Заводит новых друзей</h2>
+                <div class="section__item description__item">
+                    <h2 class="section__header description__header">Заводит новых друзей</h2>
                     <p class="section__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </div>
+                <div class="description__img description__img--third">
+                    
+                </div>
+                <div class="description__img description__img--second">
+                    
+                </div>
+                <div class="description__img description__img--first">
+                    
+                </div>
+
             </div>
         </div>
         <div class="section review">
@@ -177,8 +188,8 @@
             </div>
         </div>
         <div class="section map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.715138862529!2d30.32166081609688!3d59.93686888187548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f7f31a34b%3A0x6b40733c997b156d!2z0J_QtdGC0YDQuNC60LjRgNGF0LU!5e0!3m2!1sen!2sua!4v1535232660659"
-                height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.715138862529!2d30.32166081609688!3d59.93686888187548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f7f31a34b%3A0x6b40733c997b156d!2z0J_QtdGC0YDQuNC60LjRgNGF0LU!5e0!3m2!1sen!2sua!4v1535232660659"
+                height="220" frameborder="0" style="border:0" allowfullscreen></iframe> -->
         </div>
     </div>
 </body>
