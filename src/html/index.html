@@ -76,36 +76,48 @@
                     <p class="section__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </div>
                 <div class="description__img description__img--third">
-                    
+
                 </div>
                 <div class="description__img description__img--second">
-                    
+
                 </div>
                 <div class="description__img description__img--first">
-                    
+
                 </div>
 
             </div>
         </div>
         <div class="section review">
-            <div class="wrapper">
 
-                <div class="review__container">
-                    <div class="review__item">
-                        <div class="review__author">Николай Петров</div>
-                        <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще
-                            я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</div>
+            <div class="review__container">
+                <div class="review__item" id="review1">
+                    <div class="review__author">Николай Петров</div>
+                    <p class="section__text review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                        познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                     </p>
                 </div>
-                <div class="review__controls controls">
-                    <a href="#review1" class="controls__link"></a>
-                    <a href="#review2" class="controls__link"></a>
-                    <a href="#review3" class="controls__link"></a>
+                <div class="review__item" id="review2">
+                    <div class="review__author">Иван Сусанович</div>
+                    <p class="section__text review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! Особенно
+                        на тайгу где я сейчас живу. Я теперь могу фотографировать вечную мерзлоту день и ночь.»
+                    </p>
                 </div>
+                <div class="review__item" id="review3">
+                    <div class="review__author">Жора Покос</div>
+                    <p class="section__text review__text">«Теперь я могу присылать еще больше вариаций селфи всем кто их не просил.»
+                    </p>
+                </div>
+
             </div>
+
         </div>
-        <div class="section price">
-            <div class="table">
+        <div class="review__controls controls">
+            <a href="#review1" class="controls__link"></a>
+            <a href="#review2" class="controls__link controls__link--central"></a>
+            <a href="#review3" class="controls__link"></a>
+        </div>
+        <div class="section section--grey price">
+            <div class="price__table table">
 
                 <div class="table__col" id="basic">
                     <div class="table__header">
@@ -114,15 +126,15 @@
                     </div>
                     <div class="table__row">
                         <div class="price__feature">Розовый фильтр</div>
-                        <div class="price__check"></div>
+                        <img src="../img/yes.png" class="price__check">
                     </div>
                     <div class="table__row">
                         <div class="price__feature">Смайлики</div>
-                        <div class="price__check"></div>
+                        <img src="../img/no.png" class="price__check">
                     </div>
                     <div class="table__row">
                         <div class="price__feature">Комментарии</div>
-                        <div class="price__check"></div>
+                        <img src="../img/no.png" class="price__check">
                     </div>
                 </div>
                 <div class="table__col" id="standard">
@@ -131,16 +143,16 @@
                         <div class="price__number">3,99USD</div>
                     </div>
                     <div class="table__row">
-                        <div class="price__feature">Розовый фильтр</div>
-                        <div class="price__check"></div>
+                        <p class="price__feature">Розовый фильтр</p>
+                        <img src="../img/yes.png" class="price__check">
                     </div>
                     <div class="table__row">
                         <div class="price__feature">Смайлики</div>
-                        <div class="price__check"></div>
+                        <img src="../img/yes.png" class="price__check">
                     </div>
                     <div class="table__row">
                         <div class="price__feature">Комментарии</div>
-                        <div class="price__check"></div>
+                        <img src="../img/no.png" class="price__check">
                     </div>
                 </div>
                 <div class="table__col" id="unlim">
@@ -150,23 +162,23 @@
                     </div>
                     <div class="table__row">
                         <div class="price__feature">Розовый фильтр</div>
-                        <div class="price__check"></div>
+                        <img src="../img/yes.png" class="price__check">
                     </div>
                     <div class="table__row">
                         <div class="price__feature">Смайлики</div>
-                        <div class="price__check"></div>
+                        <img src="../img/yes.png" class="price__check">
                     </div>
                     <div class="table__row">
                         <div class="price__feature">Комментарии</div>
-                        <div class="price__check"></div>
+                        <img src="../img/yes.png" class="price__check">
                     </div>
                 </div>
             </div>
-            <div class="price__controls controls">
-                <a href="#basic" class="controls__link"></a>
-                <a href="#standard" class="controls__link"></a>
-                <a href="#unlim" class="controls__link"></a>
-            </div>
+        </div>
+        <div class="price__controls controls">
+            <div class="controls__link"></div>
+            <div class="controls__link controls__link--active controls__link--central"></div>
+            <div class="controls__link"></div>
         </div>
         <div class="section contacts">
             <h2 class="section__header section__header--big">

@@ -1,0 +1,40 @@
+.price {
+    padding-top: 90px;
+    position: relative;
+    height: 371px;
+    &__table {
+        position: absolute;
+        top: 90px;
+        left: -85vw;
+        height: 280px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: white;
+    }
+    &__number {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: white;
+    }
+    &__controls {
+        height: 102px;
+        display: flex;
+        align-items: center;
+        background-color: $grey;
+
+    }
+    &__feature {
+        line-height: 60px;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $deep-blue;
+        height: 100%;
+    }
+}

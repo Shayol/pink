@@ -1,0 +1,29 @@
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 90vw);
+    border-left: 2px solid #e5e5e5;
+    
+    &__col {
+        display: grid;
+        grid-template-rows: 98px repeat(3, 60px);
+        border-right: 2px solid #e5e5e5;
+        border-top: 2px solid #e5e5e5;
+    }
+    &__header {
+        border: 2px solid $deep-blue;
+        background-color: $deep-blue;
+        text-align: center;
+        border-bottom: 2px solid #e5e5e5;
+    }
+    &__row {
+        background-color: white;
+        padding-left: 22px;
+        padding-right: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #e5e5e5;
+    }
+
+
+}
