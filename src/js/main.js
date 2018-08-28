@@ -19,5 +19,22 @@ window.addEventListener('load', function() {
         }
     };
 
+    let menu = {
+        element: document.querySelector(".menu"),
+        open: document.querySelector(".menu__open-icon"),
+        close: document.querySelector(".menu__close-icon"),
+
+        addListeners: function() {
+            this.open.addEventListener('click', e => {
+                this.element.classList.add("menu--open");
+            });
+            this.close.addEventListener('click', e => {
+                this.element.classList.remove("menu--open");
+            });
+        }
+    }
+
     controls.addListeners();
+
+    menu.addListeners();
 });
