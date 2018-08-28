@@ -1,8 +1,9 @@
 .menu {
     background-color: $deep-blue;
-    overflow: hidden;
+    overflow: hidden; // for grid
     
     &__item {
+        display: none;
         text-align: center;
         font-size: 18px;
         font-weight: 700;
@@ -16,6 +17,7 @@
     }
     &__item\--top {
         height: 70px;
+        display: block;
         // opacity: 0.3;
     }
     &__link {
@@ -28,6 +30,11 @@
     }
 
     &\--open {
+        overflow: initial;
+
+        & .menu__item {
+            display: block;
+        }
         
         & .menu__item:not(.menu__item\--top) {
             height: 63px;
@@ -38,6 +45,17 @@
         }
         & .menu__open-icon {
             display: none;
+        }
+    }
+
+    @media(min-width: $tablet) {
+        &__item\--top { 
+            height: 110px;
+        }
+
+        &__logo {
+            display: block;
+            line-height: 100%;
         }
     }
 }

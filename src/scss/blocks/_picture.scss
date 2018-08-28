@@ -2,7 +2,6 @@
     background-image: url("../img/back-mobile.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-top: -69px;
     display: flex;
     justify-content: center;
 
@@ -12,5 +11,19 @@
         background-size: auto, auto;
         height: 100%;
         width: 320px;
+    }
+
+    @media(min-width: $tablet) {
+        background-image: url("../img/back-tablet.png");
+        background-size: cover;
+        background-position: center;
+        justify-content: flex-end;
+
+        &__content {
+            background: url("../img/phone-screen-hero-tablet.png") 80% 62.2%, url("../img/phone-hero-tablet.png") 50% 100%;
+            background-repeat: no-repeat;
+            width: 640px;
+            margin-right: 20px;
+        }
     }
 }

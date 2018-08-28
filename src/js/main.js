@@ -23,13 +23,16 @@ window.addEventListener('load', function() {
         element: document.querySelector(".menu"),
         open: document.querySelector(".menu__open-icon"),
         close: document.querySelector(".menu__close-icon"),
+        hero: document.querySelector(".hero"),
 
         addListeners: function() {
             this.open.addEventListener('click', e => {
                 this.element.classList.add("menu--open");
+                this.hero.classList.add("hero--open");
             });
             this.close.addEventListener('click', e => {
                 this.element.classList.remove("menu--open");
+                this.hero.classList.remove("hero--open");
             });
         }
     }

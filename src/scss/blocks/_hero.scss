@@ -1,9 +1,45 @@
 .hero {
     &__picture {
         height: 462px;
+        margin-top: -69px;
     }
     &__download {
         height: 271px;
+    }
+
+    @media(min-width: $tablet) {
+        display: grid;
+        grid-template-columns: 20px 1fr 1fr 10px 10px 1fr 1fr 20px;
+        grid-template-rows: 110px 103px 410px 110px;
+
+        &\--open {
+            grid-template-rows: 198px 110px 103px 410px 110px;
+
+            & .hero__menu {
+                grid-area: 1/1/3/9;
+                z-index: 1;
+            }
+
+            & .hero__picture {
+                grid-area: 2/1/6/9;
+            }
+        }
+
+        &__menu {
+            height: 110px;
+            grid-area: 1/1/2/9;
+            z-index: 1;
+        }
+
+        &__picture {
+            height: 730px;
+            margin-top: 0;
+            grid-area: 1/1/5/9;
+        }
+
+        &__download {
+
+        }
     }
    
 }
