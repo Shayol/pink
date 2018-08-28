@@ -8,6 +8,22 @@
     &\--description {
         height: 784px;
     }
+    &\--triangle {
+        z-index: 2;
+        position: relative;
+        &::after {
+            position: absolute;
+            display: block;
+            top: 100%;
+            left: 0;
+            height: 10vw;
+            width: 100vw;
+            content: '';
+            border-top: 10vw solid white;
+            border-right: 100vw solid $grey;
+            z-index: 10;
+        }
+    }
     &__text {
         text-align: center;
         font-size: 14px;

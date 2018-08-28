@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
             for(let i=0; i < this.elements.length; i++) {
                 let el= this.elements[i];
                 el.addEventListener('click', e => {
-                    let left = !i ? 5 : "-" + (90*1 - 5);
+                    let left = !i ? 6.25 : "-" + (87.5*1 - 6.25);
                     this.table.style.left = left + "vw";
                     for(var n of this.elements) {
                         n.classList.remove("controls__link--active");

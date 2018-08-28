@@ -1,0 +1,26 @@
+.map {
+    width: 100%;
+    position: relative;
+    &::before, &::after {
+        z-index: 1;
+        position: absolute;
+        height: 10vw;
+        width: 50vw;
+        content: '';
+        border-top: 10vw solid white;
+        top: 0;
+    }
+
+    &::before {
+        border-left: 50vw solid transparent;
+        left: 0;
+    }
+    &::after {
+        border-right: 50vw solid transparent;
+        left: 50vw;
+    }
+
+    &__iframe {
+        width: 100%;
+    }
+}
