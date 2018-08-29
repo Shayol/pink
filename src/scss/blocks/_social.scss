@@ -1,0 +1,10 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+    }
+}

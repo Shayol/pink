@@ -21,9 +21,60 @@
         height: 278px;
         width: 157px;
         margin-top: auto;
-        background-image: url("../img/phone-red-mobile.png");
+        background-image: url("../img/phone-third-mobile.png");
         background-repeat: no-repeat;
         background-position: center top;
+    }
+
+    @media(min-width: $tablet) {
+        padding-top: 0;
+
+        &__content {
+            display: grid;
+            grid-template-columns: 20px 1fr 1fr 10px 10px 1fr 1fr 20px;
+            grid-template-rows: 75px 140px 140px 125px;
+
+        }
+        
+
+        &__img\--first, &__img\--second  {
+            display: none;
+        }
+
+        &__item {
+            margin-bottom: 0;
+            grid-column: 5/8;
+            align-self: start;
+
+            &\--first {
+                grid-row: 2/3;
+            }
+            &\--second {
+                grid-row: 3/4;
+            }
+
+            &\--third {
+                grid-row: 4/5;
+            }
+        }
+
+        &__header {
+            text-align: left;
+        }
+        &__text {
+            text-align: left;
+        }
+
+        &__img\--third {
+            height: 480px;
+            width: 268px;
+            background: url("../img/phone-screen-tablet.png") 50% 100% no-repeat, url("../img/phone-third-tablet.png") 50% 0% no-repeat;
+            grid-area: 1/1/5/9;
+            z-index: 2;
+            align-self: end;
+            justify-self: start;
+        }
+
     }
      
 }

@@ -1,12 +1,12 @@
 @import 'reset';
 @import 'common';
+@import 'blocks/section';
 @import 'blocks/container';
 @import 'blocks/wrapper';
 @import 'blocks/hero';
 @import 'blocks/menu';
 @import 'blocks/download';
 @import 'blocks/picture';
-@import 'blocks/section';
 @import 'blocks/information';
 @import 'blocks/description';
 @import 'blocks/review';
@@ -15,3 +15,6 @@
 @import 'blocks/table';
 @import 'blocks/contacts';
 @import 'blocks/map';
+@import 'blocks/break';
+@import 'blocks/research';
+@import 'blocks/footer';

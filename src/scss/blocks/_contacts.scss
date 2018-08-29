@@ -5,11 +5,36 @@
     &__header {
         margin-bottom: 40px;
     }
+
     &__text {
         margin-top: 5px;
-        color: #d22856;
+        color: $red;
     }
+
     &__item {
         margin-bottom: 25px;
+    }
+
+    @media(min-width: $tablet) {
+        padding-bottom: 0;
+        &__header {
+            margin-bottom: 45px;
+            line-height: 1.2;
+        }
+        &__text {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item {
+            width: 50%;
+            margin-bottom: 48px;
+        }
     }
 }

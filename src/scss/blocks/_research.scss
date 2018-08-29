@@ -1,0 +1,48 @@
+.research {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: block;
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 10px 50%;
+            grid-template-rows: 40px 200px 30px;
+            justify-content: start;
+        }
+
+        &__desc {
+            grid-area: 2/4/3/5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__clock {
+            grid-area: 1/1/4/3;
+            font-size: 96px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            line-height: 149.47px;
+            color: $red;
+            height: 276px;
+            width: 238px;
+            background: url("../img/clock-red-circle-tablet.png") 50% 75% no-repeat, url("../img/timer-tablet.png") 50% 50% no-repeat;
+        }
+
+        &__link {
+            color: $red;
+        }
+
+        &__header {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 30px;
+        }
+
+        &__text {
+            text-align: left;
+        }
+    }
+}
