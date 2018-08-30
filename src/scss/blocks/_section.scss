@@ -74,5 +74,15 @@
         &\--description {
             height: 484px;
         }
+
+        &\--footer {
+            height: 128px;
+        }
+    }
+
+    @media(min-width: $desktop) {
+        &\--footer {
+            height: 198px;
+        }
     }
 }
