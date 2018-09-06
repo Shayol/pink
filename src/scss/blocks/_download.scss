@@ -3,9 +3,11 @@
     text-align: center;
     padding-top: 28px;
     padding-bottom: 30px;
+
     &__header {
         display: none;
     }
+
     &__button {
         width: 100%;
         font-size: 18px;
@@ -17,36 +19,53 @@
         border: 3px solid #ffffff;
         border-radius: 55px;
     }
+
     &__text {
         font-size: 14px;
         font-weight: 300;
         line-height: 24px;
         color: white;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     &__os {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
+
     @media (min-width: $tablet) {
         background-color: initial;
         padding: 0;
+
         &__header {
             color: white;
             text-align: center;
             display: block;
             line-height: 1;
         }
+
         &__content {
             margin: 0;
         }
+
         &__text {
             font-size: 16px;
+        }
+    }
+
+    @media(min-width: $desktop) {
+        &__button {
+            font-size: 21px;
+            line-height: 18px;
+            padding-top: 19px;
+            padding-bottom: 16px;
+            border-radius: 40px;
         }
     }
 }

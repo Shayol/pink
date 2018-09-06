@@ -92,6 +92,11 @@ module.exports = {
       template: "./src/html/index.html",
       filename: "./index.html"
     }),
+    new HtmlWebPackPlugin({
+      title: 'Title',
+      template: "./src/html/form.html",
+      filename: "./form.html"
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
     })

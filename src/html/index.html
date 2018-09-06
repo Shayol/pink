@@ -11,32 +11,7 @@
 <body>
     <div class="container">
         <div class="hero">
-            <ul class="hero__menu menu">
-                <li class="menu__item menu__item--top">
-                    <div class="wrapper wrapper--menu">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="../img/logo-desktop.png">
-                            <source media="(min-width: 660px)" srcset="../img/logo-tablet.png">
-                            <img src="../img/logo-mobile.png" alt="logo" class="menu__logo">
-                        </picture>
-
-                        <img src="../img/close.png" alt="" class="menu__close-icon">
-                        <img src="../img/open.png" alt="" class="menu__open-icon">
-                    </div>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">Фотографии</a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">Конкурс</a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">HTML Academy</a>
-                </li>
-            </ul>
+            ${require('./partials/menu.html')}
             <div class="hero__picture picture">
                 <div class="picture__content"></div>
             </div>
@@ -57,9 +32,9 @@
         </div>
         <div class="section section--triangle section--information information">
             <div class="wrapper information__content">
-                <p class="section__text section__text--big">Устали от серости
+                <p class="section__text section__text--big information__text">Устали от серости
                     <br class="break break--mobile"> мегаполиса?</p>
-                <p class="section__text section__text--big">Нам есть, что вам
+                <p class="section__text section__text--big information__text">Нам есть, что вам
                     <br> предложить!
                 </p>
             </div>
@@ -67,17 +42,17 @@
         <div class="section section--description description section--grey">
             <div class="wrapper description__content">
                 <div class="section__item description__item description__item--first">
-                    <h2 class="section__header description__header">Поднимает настроение</h2>
+                    <h2 class="section__header description__header">Поднимает <br class="break--desktop"> настроение</h2>
                     <p class="section__text description__text">Приложение позволит вам победить осеннюю хандру и
                         депрессию буквально в несколько кликов!</p>
                 </div>
                 <div class="section__item description__item description__item--second">
-                    <h2 class="section__header description__header">Меняет мир вокруг</h2>
+                    <h2 class="section__header description__header">Меняет мир <br class="break--desktop"> вокруг</h2>
                     <p class="section__text description__text">Сделайте снимок и украсьте его смайликом или текстовой
                         подписью, чтобы усилить эффект</p>
                 </div>
                 <div class="section__item description__item description__item--third">
-                    <h2 class="section__header description__header">Заводит новых друзей</h2>
+                    <h2 class="section__header description__header">Заводит <br class="break--desktop"> новых друзей</h2>
                     <p class="section__text description__text">Ставьте лайки, комментируйте, делитесь фотографиями с
                         друзьями и заводите новых</p>
                 </div>

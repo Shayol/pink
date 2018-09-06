@@ -31,6 +31,7 @@
     }
 
     @media(min-width: $tablet) {
+        
         grid-template-columns: repeat(4, 1fr);
 
         &__col\--with-features {

@@ -19,6 +19,7 @@
         white-space: initial;
         padding-top: 42px;
         vertical-align: top;
+        max-width: 940px;
     }
 
     &__text {
@@ -63,6 +64,16 @@
         &__controls {
             padding-bottom: 20px;
             margin-top: 22px;
+        }
+    }
+
+    @media(min-width: $desktop) {
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__item {
+            min-width: 940px;
         }
     }
 }

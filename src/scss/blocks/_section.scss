@@ -46,6 +46,10 @@
         }
     }
 
+    &\--footer {
+        display: none;
+    }
+
     &__header {
         font-size: 18px;
         font-weight: 700;
@@ -77,12 +81,35 @@
 
         &\--footer {
             height: 128px;
+            display: block;
         }
     }
 
     @media(min-width: $desktop) {
         &\--footer {
             height: 198px;
+            line-height: 1.2;
         }
+        &__text {
+            font-size: 18px;
+        }
+
+        &__text\--big {
+            font-size: 50px;
+            font-weight: 300;
+        }
+        &\--information {
+            height: initial;
+        }
+
+        &\--description {
+            height: initial;
+        }
+
+        &\--research {
+            margin-top: 0;
+            margin-bottom: 72px;
+        }
+
     }
 }

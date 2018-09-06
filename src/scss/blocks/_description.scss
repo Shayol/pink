@@ -76,5 +76,67 @@
         }
 
     }
+    @media(min-width: $desktop) {
+        &__content {
+            @include desktop-grid;
+            grid-template-rows: 300px 56px 200px 52px;
+        }
+        &__img {
+            width: 186px;
+            height: 300px;
+            grid-row: 1/2;
+            z-index: 3;
+        }
+
+        &__img\--first {
+            grid-column: 2/4;
+            justify-self: start;
+            display: block;
+            background: url("../img/phone-screen-grey-desktop.png") 8.5px 45px no-repeat, url("../img/phone-first-second-third-desktop.png") 50% 0% no-repeat;
+        }
+        &__img\--second {
+            grid-column: 4/6;
+            justify-self: center;
+            display: block;
+            background: url("../img/phone-screen-red-desktop.png") 8.5px 45px no-repeat, url("../img/phone-first-second-third-desktop.png") 50% 0% no-repeat;
+        }
+        &__img\--third {
+            justify-self: end;
+            grid-column: 6/8;
+            display: block;
+            background: url("../img/phone-screen-smile-desktop.png") 8.5px 45px no-repeat, url("../img/phone-first-second-third-desktop.png") 50% 0% no-repeat;
+        }
+
+        &__item {
+            
+            grid-row: 3/4;
+            max-width: 240px;
+            &\--first {
+                grid-column: 2/4;
+                justify-self: start;
+                margin-left: -20px;
+            }
+            &\--second {
+                grid-column: 3/7;
+                justify-self: center;
+            }
+            &\--third {
+                grid-column: 6/8;
+                justify-self: end;
+                margin-right: -20px;
+            }
+        }
+
+        &__text {
+            text-align: center;
+            line-height: 30px;
+        }
+        &__header {
+            text-align: center;
+            font-size: 30px;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+    }
      
 }

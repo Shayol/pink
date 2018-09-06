@@ -10,4 +10,11 @@
         padding: 50px 0 55px 0;
         display: block;
     }
+    @media(min-width: $desktop) {
+        padding: 74px 0 75px 0;
+
+        &__text {
+            line-height: 1.2;
+        }
+    }
 }

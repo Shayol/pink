@@ -3,6 +3,11 @@
         height: 462px;
         margin-top: -69px;
     }
+
+    &__picture\--form {
+        height: 238px;
+    }
+
     &__download {
         height: 271px;
     }
@@ -39,6 +44,7 @@
             height: 730px;
             margin-top: 0;
             grid-area: 1/1/5/9;
+            height: initial;
         }
 
         &__download {
@@ -46,5 +52,21 @@
             height: initial;
         }
     }
-   
+
+    @media(min-width: $desktop) {
+        grid-template-columns: 1fr 300px 640px 1fr;
+        grid-template-rows: 110px 120px 495px 125px;
+
+        &__menu {
+            grid-area: 1/1/2/5;
+        }
+
+        &__download {
+            grid-area: 3/2/4/3;
+        }
+
+        &__picture {
+            grid-area: 1/1/5/11;
+        }
+    }
 }

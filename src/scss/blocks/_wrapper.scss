@@ -1,9 +1,19 @@
 .wrapper {
     height: 100%;
     margin: 0 20px;
+    max-width: 940px;
     &\--menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    @media(min-width: $desktop) {
+        margin-left: auto;
+        margin-right: auto;
+        &\--menu {
+            justify-content: center;
+            margin: initial;
+        }
     }
 }

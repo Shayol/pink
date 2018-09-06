@@ -1,7 +1,15 @@
 .break {
+    &\--desktop {
+        display: none;
+    }
     @media(min-width: $tablet) {
         &\--mobile {
             display: none;
+        }
+    }
+    @media(min-width: $desktop) {
+        &\--desktop {
+            display: initial;
         }
     }
 }

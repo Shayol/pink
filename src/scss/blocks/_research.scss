@@ -45,4 +45,21 @@
             text-align: left;
         }
     }
+    @media(min-width: $desktop) {
+        &__content {
+            @include desktop-grid;
+            grid-template-rows: 430px;
+            align-items: center;
+        }
+        &__clock {
+            width: 298px;
+            height: 345px;
+            grid-area: 1/1/2/4;
+            background: url("../img/clock-red-circle-desktop.png") 50% 75% no-repeat, url("../img/timer-desktop.png") 50% 50% no-repeat;
+        }
+        &__desc {
+            grid-area: 1/4/2/9;
+            height: 200px;
+        }
+    }
 }

@@ -5,6 +5,22 @@
     display: flex;
     justify-content: center;
 
+    &\--form {
+        display: grid;
+        @include mobile-grid;
+        grid-template-rows: auto 50px;
+        align-items: end;
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 300;
+        color: white;
+        grid-column: 2/span 4;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
     &__content {
         background: url("../img/phone-screen-hero-mobile.png") 50% 78%, url("../img/phone-hero-mobile.png") 93.5% 118%;
         background-repeat: no-repeat;
@@ -23,6 +39,17 @@
             background: url("../img/phone-screen-hero-tablet.png") 79% 62.2%, url("../img/phone-hero-tablet.png") 50% 100%;
             background-repeat: no-repeat;
             width: 660px;
+        }
+    }
+    @media(min-width: $desktop) {
+        background-image: url("../img/back-desktop.png");
+
+        &__content {
+            margin-right: auto;
+            margin-left: auto;
+            width: 900px;
+            background: url("../img/phone-screen-hero-desktop.png") 85% 60%, url("../img/phone-hero-desktop.png") 0% 100%;
+            background-repeat: no-repeat;
         }
     }
 }
