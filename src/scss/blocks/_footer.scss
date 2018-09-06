@@ -1,27 +1,25 @@
 .footer {
+
     &__content {
         display: grid;
-        grid-template-columns: 1fr 1fr 10px 10px 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 40px auto) 40px;
         align-items: center;
+        justify-items: center;
     }
 
     &__logo {
-        grid-area: 1/1/2/2;
-        align-items: center;
-        justify-self: start;
+        grid-row: 2/3;
     }
-
     &__social {
-        grid-area: 1/2/1/6;
-        justify-self: center;
+        grid-row: 4/5;
     }
-
     &__htmlacademy {
-        grid-area: 1/6/2/7;
-        justify-self: end;
+        grid-row: 6/7;
         display: flex;
         align-items: center;
     }
+
 
     &__developed {
         color: $deep-blue;
@@ -30,4 +28,29 @@
         line-height: 18px;
         padding-right: 14px;
     }
+
+    @media(min-width: $tablet) {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 10px 10px 1fr 1fr;
+            align-items: center;
+        }
+    
+        &__logo {
+            grid-area: 1/1/2/2;
+            align-items: center;
+            justify-self: start;
+        }
+    
+        &__social {
+            grid-area: 1/2/1/6;
+            justify-self: center;
+        }
+    
+        &__htmlacademy {
+            grid-area: 1/6/2/7;
+            justify-self: end;
+        }
+    }
+    
 }

@@ -46,7 +46,7 @@
         }
     }
 
-    &\--footer {
+    &\--footer:not(&\--form) {
         display: none;
     }
 
