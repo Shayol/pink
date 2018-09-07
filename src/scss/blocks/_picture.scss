@@ -8,7 +8,7 @@
     &\--form {
         display: grid;
         @include mobile-grid;
-        grid-template-rows: auto 50px;
+        grid-template-rows: auto 55px;
         align-items: end;
     }
 
@@ -19,6 +19,7 @@
         grid-column: 2/span 4;
         grid-row: 1/2;
         text-align: center;
+        line-height: 1.2;
     }
 
     &__content {

@@ -1,0 +1,8 @@
+.achievements-form-section {
+    &__field {
+        grid-column: 2/span 4;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+}

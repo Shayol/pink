@@ -1,6 +1,8 @@
 @mixin desktop-grid {
+    display: grid;
     grid-template-columns: 60px 90px 1fr 100px 100px 1fr 90px 60px;
 }
 @mixin mobile-grid {
+    display: grid;
     grid-template-columns: 20px repeat(4, 1fr) 20px;
 }
