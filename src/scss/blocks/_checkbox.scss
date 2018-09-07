@@ -1,5 +1,8 @@
 .checkbox {
     position: relative;
+    // grid-column: 1/2;
+    height: 39px;
+    width: 39px;
 
     &__input {
         width: 39px;
@@ -20,7 +23,7 @@
         background-color: white;
     }
 
-    &__input:checked ~ &__check {
+    &__input:checked~&__check {
         position: absolute;
         border-right: 1px solid $red;
         border-bottom: 1px solid $red;

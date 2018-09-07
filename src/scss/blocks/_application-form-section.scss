@@ -1,8 +1,15 @@
 .application-form-section {
+    grid-row-gap: 36px;
     &__field {
         grid-column: 2/span 4;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    &__radio-wrapper {
+        grid-column: 1/2;
+        width: 39px;
+        height: 39px;
     }
 }

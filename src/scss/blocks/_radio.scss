@@ -1,0 +1,30 @@
+.radio {
+    position: relative;
+
+    &__input {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        opacity: 0;
+        z-index: 2;
+    }
+    &__decorator {
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 100%;
+        border: 2px solid #e5e5e5;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    &__check {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 11px;
+        left: 11px;
+        background-color: $red;
+        border-radius: 50%;
+    }
+}
