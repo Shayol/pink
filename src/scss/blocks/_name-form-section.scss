@@ -7,4 +7,22 @@
             padding-bottom: 0;
         }
     }
+
+    &__header {
+        text-align: left;
+        padding-left: 20px;
+        line-height: 60px;
+    }
+
+    @media (min-width: $tablet) {
+        grid-row-gap: 56px;
+
+        &__field {
+            padding-bottom: 0;
+        }
+    }
+
+    &__header {
+        padding: 0 22px 0 0;
+    }
 }

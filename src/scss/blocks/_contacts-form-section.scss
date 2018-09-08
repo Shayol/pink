@@ -8,4 +8,60 @@
         }
     }
 
+    &__section-header {
+        display: none;
+    }
+
+    &__header {
+        text-align: left;
+        padding-left: 20px;
+        line-height: 60px;
+    }
+
+    @media(min-width: $tablet) {
+
+        &__field {
+            flex-direction: column;
+            padding-bottom: 38px;
+        }
+
+        &__input-wrapper {
+            order: -1;
+            padding-bottom: 14px;
+            position: relative;
+            padding-bottom: 18px;
+
+            &\--email, &\--phone {
+                &::after {
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    top: 0;
+                    height: 60px;
+                    width: 60px;
+                    background-color: $light-grey;
+                    display: block;
+                    z-index: 2;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &\--email::after {
+                background-image: url("../img/email-icon.png");
+            }
+            &\--phone::after {
+                background-image: url("../img/phone-icon.png");
+            }
+        }
+
+        &__section-header {
+            display: initial;
+        }
+
+        &__header {
+            line-height: 18px;
+        }
+    }
+
 }

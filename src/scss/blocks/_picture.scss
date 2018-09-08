@@ -41,7 +41,17 @@
             background-repeat: no-repeat;
             width: 660px;
         }
+
+        &\--form {
+            grid-template-rows: auto 75px;
+        }
+
+        &__text {
+            font-size: 50px;
+            font-weight: 300;
+        }
     }
+
     @media(min-width: $desktop) {
         background-image: url("../img/back-desktop.png");
 

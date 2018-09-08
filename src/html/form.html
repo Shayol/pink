@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <div class="hero">
+        <div class="hero hero--form">
             ${require('./partials/menu.html')}
             <div class="hero__picture hero__picture--form picture picture--form">
                 <p class="picture__text">
@@ -19,32 +19,35 @@
             </div>
         </div>
         <form class="form" action="/form.html" method="post">
-            <div class="form__section form__section--first">
-                <p class="form__text form__text--small">
+            <div class="form__section text-form-section form__textual form__section--first">
+                <p class="form__text form__text--textual">
                     Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
                 </p>
+                <p class="form__text form__text--textual">
+                    Пожалуйста, заполните форму ниже:
+                </p>
             </div>
-            <div class="form__section name-form-section">
+            <div class="form__section name-form-section form__name">
                 <div class="form__field name-form-section__field">
-                    <h2 class="form__header form__header--left">фамилия</h2>
+                    <h2 class="form__header name-form-section__header">фамилия</h2>
                     <input type="text" placeholder="Укажите фамилию *" class="form__input" required>
                 </div>
                 <div class="form__field name-form-section__field">
-                    <h2 class="form__header form__header--left">имя</h2>
+                    <h2 class="form__header name-form-section__header">имя</h2>
                     <input type="text" placeholder="Введите ваше имя *" class="form__input" required>
                 </div>
                 <div class="form__field name-form-section__field">
-                    <h2 class="form__header form__header--left">отчество</h2>
+                    <h2 class="form__header name-form-section__header">отчество</h2>
                     <input type="text" placeholder="Ну и отчество тоже" class="form__input">
                 </div>
             </div>
-            <div class="form__section achievements-form-section form__section--grey">
-                <h2 class="form__header form__header--achievements">
+            <div class="form__section form__achievements form__section--with-border achievements-form-section form__section--grey">
+                <h2 class="form__header form__section-header form__header--achievements">
                     Ваши безбашенные <br class="break break--mobile">
                     достижения в путешествии
                 </h2>
                 <div class="form__field achievements-form-section__field">
-                    <div class="achievements-form-section__checkbox-wrapper checkbox">
+                    <div class="achievements-form-section__checkbox-wrapper form__checkbox-wrapper checkbox">
                         <input type="checkbox" name="shark-selfie" id="shark-selfie" class="checkbox__input" checked>
                         <div class="checkbox__decorator"></div>
                         <div class="checkbox__check"></div>
@@ -52,7 +55,7 @@
                     <label for="shark-selfie" class="form__label">Сделал селфи с акулой</label>
                 </div>
                 <div class="form__field achievements-form-section__field">
-                    <div class="achievements-form-section__checkbox-wrapper checkbox">
+                    <div class="achievements-form-section__checkbox-wrapper form__checkbox-wrapper checkbox">
                         <input type="checkbox" name="" id="sunburn" class="checkbox__input" checked>
                         <div class="checkbox__decorator"></div>
                         <div class="checkbox__check"></div>
@@ -60,7 +63,7 @@
                     <label for="sunburn" class="form__label">Обгорел на пляже</label>
                 </div>
                 <div class="form__field achievements-form-section__field">
-                    <div class="achievements-form-section__checkbox-wrapper checkbox">
+                    <div class="achievements-form-section__checkbox-wrapper form__checkbox-wrapper checkbox">
                         <input type="checkbox" name="norris" id="norris" class="checkbox__input">
                         <div class="checkbox__decorator"></div>
                         <div class="checkbox__check"></div>
@@ -68,7 +71,7 @@
                     <label for="norris" class="form__label">Видел Чака Норриса</label>
                 </div>
                 <div class="form__field achievements-form-section__field">
-                    <div class="achievements-form-section__checkbox-wrapper checkbox">
+                    <div class="achievements-form-section__checkbox-wrapper form__checkbox-wrapper checkbox">
                         <input type="checkbox" name="souvenir" id="souvenir" class="checkbox__input">
                         <div class="checkbox__decorator"></div>
                         <div class="checkbox__check"></div>
@@ -76,7 +79,7 @@
                     <label for="souvenir" class="form__label">Накупил сувениров</label>
                 </div>
                 <div class="form__field achievements-form-section__field">
-                    <div class="achievements-form-section__checkbox-wrapper checkbox">
+                    <div class="achievements-form-section__checkbox-wrapper form__checkbox-wrapper checkbox">
                         <input type="checkbox" name="tower" id="tower" class="checkbox__input" checked>
                         <div class="checkbox__decorator"></div>
                         <div class="checkbox__check"></div>
@@ -84,7 +87,7 @@
                     <label for="tower" class="form__label">Удержал башню</label>
                 </div>
                 <div class="form__field achievements-form-section__field">
-                    <div class="achievements-form-section__checkbox-wrapper checkbox">
+                    <div class="achievements-form-section__checkbox-wrapper form__checkbox-wrapper checkbox">
                         <input type="checkbox" name="hotel" id="hotel" class="checkbox__input">
                         <div class="checkbox__decorator"></div>
                         <div class="checkbox__check"></div>
@@ -92,23 +95,31 @@
                     <label for="hotel" class="form__label">Разгромил отель</label>
                 </div>
             </div>
-            <div class="form__section contacts-form-section">
+            <div class="form__section form__contacts form__section--with-border contacts-form-section">
+                <h2 class="form__header form__section-header contacts-form-section__section-header">
+                    Контактная информация
+                </h2>
                 <div class="form__field contacts-form-section__field">
-                    <div class="form__header form__header--left">Номер телефона</div>
-                    <input type="phone" placeholder="Номер телефона" class="form__input form__phone">
+                    <div class="form__header contacts-form-section__header">Номер телефона</div>
+                    <div class="contacts-form-section__input-wrapper contacts-form-section__input-wrapper--phone">
+                        <input type="phone" placeholder="Номер телефона" class="form__input form__phone contacts-form-section__input contacts-form-section__phone">
+                    </div>
                 </div>
                 <div class="form__field contacts-form-section__field">
-                    <div class="form__header form__header--left">адрес почты</div>
-                    <input type="email" placeholder="Введите почту *" class="form__input form__email" required>
+                    <div class="form__header contacts-form-section__header">адрес почты</div>
+                    <div class="contacts-form-section__input-wrapper contacts-form-section__input-wrapper--email">
+                        <input type="email" placeholder="Введите почту *" class="form__input form__email contacts-form-section__input contacts-form-section__email"
+                            required>
+                    </div>
                 </div>
             </div>
-            <div class="form__section application-form-section form__section--grey">
-                <h2 class="form__header form__header--application">
+            <div class="form__section form__application form__section--with-border application-form-section form__section--grey">
+                <h2 class="form__header form__section-header form__header--application">
                     С каким приложением
                     путешествовали?
                 </h2>
                 <div class="form__field application-form-section__field">
-                    <div class="application-form-section__radio-wrapper radio">
+                    <div class="application-form-section__radio-wrapper form__radio-wrapper radio">
                         <input type="radio" name="ios" id="ios" class="radio__input">
                         <div class="radio__decorator"></div>
                         <div class="radio__check"></div>
@@ -117,7 +128,7 @@
                     <label for="ios" class="form__label">Pink для iOS</label>
                 </div>
                 <div class="form__field application-form-section__field">
-                    <div class="application-form-section__radio-wrapper radio">
+                    <div class="application-form-section__radio-wrapper form__radio-wrapper radio">
                         <input type="radio" name="android" id="android" class="radio__input">
                         <div class="radio__decorator"></div>
                         <div class="radio__check"></div>
@@ -125,7 +136,7 @@
                     <label for="android" class="form__label">Pink на Android</label>
                 </div>
                 <div class="form__field application-form-section__field">
-                    <div class="application-form-section__radio-wrapper radio">
+                    <div class="application-form-section__radio-wrapper form__radio-wrapper radio">
                         <input type="radio" name="windows" id="windows" class="radio__input">
                         <div class="radio__decorator"></div>
                         <div class="radio__check"></div>
@@ -133,11 +144,11 @@
                     <label for="windows" class="form__label">Windows Phone</label>
                 </div>
             </div>
-            <div class="form__section describe-form-section">
-                <h2 class="describe-form-section__header form__header">
+            <div class="form__section form__describe form__section--with-border describe-form-section">
+                <h2 class="describe-form-section__header form__section-header form__header">
                     Опишите свои эмоции
                 </h2>
-                <textarea name="textarea" cols="40" rows="10" class="textarea describe-form-section__textarea">Можно прям в красках, не стесняясь в выражениях
+                <textarea name="textarea" cols="40" rows="10" class="form__textarea textarea describe-form-section__textarea">Можно прям в красках, не стесняясь в выражениях
                 </textarea>
             </div>
             <div class="form__bottom-section">

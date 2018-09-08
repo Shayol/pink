@@ -1,12 +1,15 @@
 .achievements-form-section {
     grid-row-gap: 42px;
     &__field {
-        grid-column: 2/span 4;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
     }
     &__wrapper-checkbox {
         grid-column: 1/2;
+    }
+
+    @media(min-width: $tablet) {
+        padding: 55px 60px 50px 60px;
     }
 }

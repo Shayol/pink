@@ -8,17 +8,14 @@
         &\--first {
             padding-bottom: 0;
         }
+
         &\--grey {
             background-color: $grey;
         }
     }
 
     &__field {
-
-    }
-    
-    &__label {
-        grid-column: 2/span 3;
+        grid-column: 2/span 4;
     }
 
     &__input {
@@ -33,6 +30,10 @@
             line-height: 3;
             color: $deep-blue;
         }
+    }
+
+    &__textarea {
+        grid-column: 2/span 4;
     }
 
     &__text {
@@ -51,23 +52,19 @@
     &__header {
         font-size: 14px;
         font-weight: 400;
-        line-height: 18px;
         text-transform: uppercase;
         color: $red;
-        text-align: center;
-        padding-bottom: 8px;
         grid-column: 2/span 4;
 
-        &\--left {
-            text-align: left;
-            padding-left: 20px;
-            line-height: 30px;
-        }
-
-        &\--achievements, &\--application {
+        &\--achievements,
+        &\--application {
             line-height: 18px;
             padding-bottom: 0;
         }
+    }
+
+    &__section-header {
+        text-align: left;
     }
 
     &__label {
@@ -75,22 +72,145 @@
         font-weight: 400;
         line-height: 30px;
         color: $deep-blue;
+        grid-column: 2/span 3;
     }
 
     &__bottom-section {
         @include mobile-grid;
         grid-template-rows: auto 36px auto;
         padding: 0 0 6px 0;
-
     }
+
     &__button {
         grid-area: 1/2/2/6;
     }
+
     &__required {
         grid-area: 3/2/4/6;
         justify-self: center;
     }
+
     &__red {
         color: $red;
+    }
+
+    @media(min-width: $tablet) {
+        padding: 94px 20px 0 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 70px;
+        grid-template-areas:
+            "textual"
+            "name"
+            "application"
+            "contacts"
+            "achievements"
+            "describe"
+            "bottom";
+
+        &__section {
+            grid-template-columns: 100%;
+            position: relative;
+
+            &\--grey {
+                background-color: initial;
+            }
+
+            &\--with-border {
+                border: 2px solid #e5e5e5;
+                padding: 50px 60px 50px 60px;
+            }
+        }
+
+        &__textual {
+            grid-area: textual;
+            padding: 0 60px;
+        }
+
+        &__name {
+            grid-area: name;
+            padding: 0;
+        }
+
+        &__application {
+            grid-area: application;
+        }
+
+        &__achievements {
+            grid-area: achievements;
+        }
+
+        &__contacts {
+            grid-area: contacts;
+            padding-bottom: 30px;
+        }
+
+        &__bottom-section {
+            grid-area: bottom;
+            grid-template-columns: 1fr 1fr 10px 10px 1fr 1fr;
+            grid-template-rows: auto;
+            align-items: center;
+        }
+
+        &__describe {
+            grid-area: describe;
+        }
+
+        &__label {
+            display: inline-block;
+        }
+
+        &__field {
+            display: block;
+            grid-column: 1/2;
+            display: flex;
+        }
+
+        &__checkbox-wrapper {
+            margin-right: 23px;
+        }
+
+        &__radio-wrapper {
+            margin-right: 23px;
+        }
+
+        &__textarea {
+            grid-column: 1/2;
+        }
+
+        &__header {
+            grid-column: 1/2;
+        }
+
+        &__section-header {
+            padding-bottom: 0;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+            padding: 12px 32px;
+            background-color: white;
+            z-index: 2;
+            white-space: nowrap;
+        }
+
+        &__text {
+            grid-column: 1/2;
+        }
+
+        &__text\--textual {
+            font-size: 18px;
+        }
+
+        &__button {
+            grid-column: 1/span 2;
+        }
+
+        &__required {
+            grid-column: 5/7;
+            grid-row: 1/2;
+            justify-self: end;
+        }
     }
 }

@@ -1,7 +1,6 @@
 .application-form-section {
     grid-row-gap: 36px;
     &__field {
-        grid-column: 2/span 4;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
@@ -11,5 +10,9 @@
         grid-column: 1/2;
         width: 39px;
         height: 39px;
+    }
+
+    @media(min-width: $tablet) {
+        padding: 55px 60px 55px 60px;
     }
 }
