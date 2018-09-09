@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photos</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hero hero--form hero--photos">
+            ${require('./partials/menu.html')}
+            <div class="hero__picture hero__picture--form picture picture--form">
+                <p class="picture__text">
+                    Фотографии
+                    пользователей
+                </p>
+            </div>
+        </div>
+
+        <div class="textual">
+            <p class="textual__text">
+                Взгляните на фотографии, которые выкладывают пользователи!
+                Видите, как не хватает ваших?
+            </p>
+        </div>
+        <div class="panorama">
+            <div class="panorama__img-wrapper">
+                <picture class="panorama__picture">
+                    <source media="(min-width: 1200px)" srcset="../img/panorama-desktop.png">
+                    <source media="(min-width: 660px)" srcset="../img/panorama-tablet.png">
+                    <img src="../img/panorama-mobile.png" alt="panorama" class="panorama__img">
+                </picture>
+            </div>
+            <div class="panorama__info photo-info">
+                <div class="photo-info__top">
+                    <h4 class="photo-info__author">Анна</h4>
+                    <span class="photo-info__time">(5 минут назад)</span>
+                    <p class="photo-info__text">
+                        Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
+                        задавайте свои вопросы!
+                    </p>
+                </div>
+
+                <div class="photo-info__bottom">
+                    <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon">
+                    <span class="photo-info__like-text">
+                        нравится:
+                    </span>
+                    <span class="photo-info__like-number">
+                        215
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="photos">
+            <div class="photos__item photo">
+                <div class="photo__img-wrapper">
+                    <picture class="photo__picture"></picture>
+                    <source media="(min-width: 1200px)" srcset="../img/desktop-gallery-photo-1.png">
+                    <source media="(min-width: 660px)" srcset="../img/tablet-gallery-photo-1.png">
+                    <img src="../img/mobile-gallery-photo-1.png" alt="photo" class="photo__img">
+                    </picture>
+                    <div class="photo__info photo-info">
+                        <div class="photo-info__top">
+                            <h4 class="photo-info__author"></h4>
+                            <span class="photo-info__time"></span>
+                            <p class="photo-info__text"></p>
+                        </div>
+                        <div class="photo-info__bottom">
+                            <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon">
+                            <span class="photo-info__like-text"></span>
+                            <span class="photo-info__like-number"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos__item photo">
+                <div class="photo__img-wrapper">
+                    <picture class="photo__picture"></picture>
+                    <source media="(min-width: 1200px)" srcset="../img/desktop-gallery-photo-2.png">
+                    <source media="(min-width: 660px)" srcset="../img/tablet-gallery-photo-2.png">
+                    <img src="../img/mobile-gallery-photo-2.png" alt="photo" class="photo__img">
+                    </picture>
+                    <div class="photo__info photo-info">
+                        <div class="photo-info__top">
+                            <h4 class="photo-info__author"></h4>
+                            <span class="photo-info__time"></span>
+                            <p class="photo-info__text"></p>
+                        </div>
+                        <div class="photo-info__bottom">
+                            <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon">
+                            <span class="photo-info__like-text"></span>
+                            <span class="photo-info__like-number"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos__item photo">
+                <div class="photo__img-wrapper">
+                    <picture class="photo__picture"></picture>
+                    <source media="(min-width: 1200px)" srcset="../img/desktop-gallery-photo-3.png">
+                    <source media="(min-width: 660px)" srcset="../img/tablet-gallery-photo-3.png">
+                    <img src="../img/mobile-gallery-photo-3.png" alt="photo" class="photo__img">
+                    </picture>
+                    <div class="photo__info photo-info">
+                        <div class="photo-info__top">
+                            <h4 class="photo-info__author"></h4>
+                            <span class="photo-info__time"></span>
+                            <p class="photo-info__text"></p>
+                        </div>
+                        <div class="photo-info__bottom">
+                            <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon">
+                            <span class="photo-info__like-text"></span>
+                            <span class="photo-info__like-number"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos__item photo">
+                <div class="photo__img-wrapper">
+                    <picture class="photo__picture"></picture>
+                    <source media="(min-width: 1200px)" srcset="../img/desktop-gallery-photo-4.png">
+                    <source media="(min-width: 660px)" srcset="../img/tablet-gallery-photo-4.png">
+                    <img src="../img/mobile-gallery-photo-4.png" alt="photo" class="photo__img">
+                    </picture>
+                    <div class="photo__info photo-info">
+                        <div class="photo-info__top">
+                            <h4 class="photo-info__author"></h4>
+                            <span class="photo-info__time"></span>
+                            <p class="photo-info__text"></p>
+                        </div>
+                        <div class="photo-info__bottom">
+                            <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon">
+                            <span class="photo-info__like-text"></span>
+                            <span class="photo-info__like-number"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos__item photo">
+                <div class="photo__img-wrapper">
+                    <picture class="photo__picture"></picture>
+                    <source media="(min-width: 1200px)" srcset="../img/desktop-gallery-photo-5.png">
+                    <source media="(min-width: 660px)" srcset="../img/tablet-gallery-photo-5.png">
+                    <img src="../img/mobile-gallery-photo-5.png" alt="photo" class="photo__img">
+                    </picture>
+                    <div class="photo__info photo-info">
+                        <div class="photo-info__top">
+                            <h4 class="photo-info__author"></h4>
+                            <span class="photo-info__time"></span>
+                            <p class="photo-info__text"></p>
+                        </div>
+                        <div class="photo-info__bottom">
+                            <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon">
+                            <span class="photo-info__like-text"></span>
+                            <span class="photo-info__like-number"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos__item photo">
+                <div class="photo__img-wrapper">
+                    <picture class="photo__picture"></picture>
+                    <source media="(min-width: 1200px)" srcset="../img/desktop-gallery-photo-6.png">
+                    <source media="(min-width: 660px)" srcset="../img/tablet-gallery-photo-6.png">
+                    <img src="../img/mobile-gallery-photo-6.png" alt="photo" class="photo__img">
+                    </picture>
+                    <div class="photo__info photo-info">
+                        <div class="photo-info__top">
+                            <h4 class="photo-info__author"></h4>
+                            <span class="photo-info__time"></span>
+                            <p class="photo-info__text"></p>
+                        </div>
+                        <div class="photo-info__bottom">
+                            <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon">
+                            <span class="photo-info__like-text"></span>
+                            <span class="photo-info__like-number"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="textual textual--photo-bottom">
+            <p class="textual__text">
+                Затмите их всех!
+                Выкладывайте все, что накопилось в телефоне!
+            </p>
+        </div>
+        <div class="upload">
+            <div class="upload__photo-wrapper">
+                <picture class="upload__picture">
+                    <source media="(min-width: 660px)" srcset="../img/upload-desktop.png">
+                    <img src="../img/upload-mobile.png" alt="upload" class="upload__photo">
+                </picture>
+            </div>
+            <div class="upload__tab">
+                <div class="upload__controls">
+                    <div class="upload__icons">
+                        <img src="../img/crop.png" alt="crop" class="upload__icon">
+                        <img src="../img/fill.png" alt="fill" class="upload__icon">
+                        <img src="../img/contrast.png" alt="contrast" class="upload__icon">
+                    </div>
+                    <div class="upload__sliders">
+                        <input type="range" name="" id="" class="upload__slider slider slider--crop">
+                        <input type="range" name="" id="" class="upload__slider slider slider--fill">
+                        <input type="range" name="" id="" class="upload__slider slider  slider--contrast">
+                    </div>
+                </div>
+                <div class="upload__buttons">
+                    <button class="upload__button round-button upload__post">запостить</button>
+                    <button class="upload__button round-button upload__cancel">отменить</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer section section--footer section--form">
+            ${require('./partials/footer.html')}
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- <picture class="photo__picture"></picture>
+<source media="(min-width: 1200px)" srcset="../img/desktop-gallery-photo.png">
+<source media="(min-width: 660px)" srcset="../img/tablet-gallery-photo.png"> -->
