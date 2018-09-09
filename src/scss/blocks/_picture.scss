@@ -44,6 +44,8 @@
 
         &\--form {
             grid-template-rows: auto 75px;
+            background-size: initial;
+            background-position: 50% 0%;
         }
 
         &__text {
@@ -55,12 +57,22 @@
     @media(min-width: $desktop) {
         background-image: url("../img/back-desktop.png");
 
+        &\--form {
+            grid-template-rows: auto 25%;
+            grid-template-columns: 1fr 80% 1fr;
+        }
+
         &__content {
             margin-right: auto;
             margin-left: auto;
             width: 900px;
             background: url("../img/phone-screen-hero-desktop.png") 85% 60%, url("../img/phone-hero-desktop.png") 0% 100%;
             background-repeat: no-repeat;
+        }
+
+        &__text {
+            grid-column: 2/3;
+            font-size: 50px;
         }
     }
 }
