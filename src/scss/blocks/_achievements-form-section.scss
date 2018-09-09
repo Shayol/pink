@@ -9,7 +9,12 @@
         grid-column: 1/2;
     }
 
-    @media(min-width: $tablet) {
-        padding: 55px 60px 50px 60px;
+    @media(min-width: $desktop) {
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+
+        &__field {
+            justify-self: start;
+        }
     }
 }

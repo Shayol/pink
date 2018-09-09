@@ -16,4 +16,10 @@
             height: 190px;
         }
     }
+
+    @media(min-width: $desktop) {
+        &__textarea {
+            height: 125px;
+        } 
+    }
 }

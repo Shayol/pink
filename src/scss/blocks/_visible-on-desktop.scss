@@ -1,0 +1,7 @@
+.visible-on-desktop {
+    display: none;
+
+    @media(min-width: $desktop) {
+        display: initial;
+    }
+}

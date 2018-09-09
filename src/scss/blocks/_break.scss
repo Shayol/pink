@@ -6,6 +6,9 @@
         &\--mobile {
             display: none;
         }
+        &\--tablet {
+            display: none;
+        }
     }
     @media(min-width: $desktop) {
         &\--desktop {

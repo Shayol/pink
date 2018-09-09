@@ -52,5 +52,11 @@
             justify-self: end;
         }
     }
+
+    @media(min-width: $desktop) {
+        &__developed {
+            font-size: 18px;
+        }
+    }
     
 }

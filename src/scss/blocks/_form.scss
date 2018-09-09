@@ -162,7 +162,6 @@
         }
 
         &__field {
-            display: block;
             grid-column: 1/2;
             display: flex;
         }
@@ -212,5 +211,75 @@
             grid-row: 1/2;
             justify-self: end;
         }
+    }
+
+    @media(min-width: $desktop) {
+        @include form-desktop-grid;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-areas: ".  textual  textual  textual  textual  textual  textual  ."
+            ".  name  name  name  application  application  application  ."
+            ".  contacts  contacts  contacts  contacts  contacts  contacts  ."
+            ".  achievements  achievements  achievements  achievements  achievements  achievements  ."
+            ".  describe  describe  describe  describe  describe  describe  ."
+            ".  bottom  bottom  bottom  bottom  bottom  bottom  .";
+        padding: 94px 0 0 0;
+
+        &__section\--with-border {
+            padding: 55px 6.4%;
+        }
+
+        &__application {
+            width: 92%;
+            justify-self: end;
+            padding-left: 16%;
+        }
+
+        &__name {
+            width: 92%;
+            justify-self: start;
+        }
+
+        &__contacts {
+            grid-template-columns: 1fr 4% 4% 1fr;
+            padding-top: 44px;
+            padding-bottom: 14px;
+        }
+
+        &__achievements {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        &__describe {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+
+        &__bottom-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__button {
+            width: 32%;
+        }
+
+        &__field {
+            grid-column: auto;
+        }
+
+        &__field\--phone {
+            grid-column: 1/2;
+        }
+
+        &__field\--email {
+            grid-column: 4/5;
+        }
+
+        &__header {
+            grid-column: auto;
+        }
+
     }
 }

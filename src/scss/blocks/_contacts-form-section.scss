@@ -64,4 +64,16 @@
         }
     }
 
+    @media(min-width: $desktop) {
+        &__field {
+            padding-bottom: 0;
+        }
+        &__input-wrapper {
+            padding-bottom: 10px;
+        }
+        &__header {
+            line-height: 30px;
+        }
+    }
+
 }
