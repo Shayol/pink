@@ -1,0 +1,52 @@
+.photo-info {
+    background-color: $grey;
+    padding: 18px 17px 20px 17px;
+
+    &__top {
+        color: $deep-blue;
+        padding-bottom: 10px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__author {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &__time {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__like-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $red;
+    }
+
+    &__like-number {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $red;
+    }
+
+    &__like-icon {
+        padding-right: 20px;
+    }
+}

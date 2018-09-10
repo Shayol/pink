@@ -1,0 +1,34 @@
+.panorama {
+    position: relative;
+    margin-bottom: 20px;
+    @include mobile-grid;
+    
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__img-wrapper {
+        grid-column: 1/span 6;
+    }
+
+    &__img-wrapper::after {
+        content: "панорама дня";
+        position: absolute;
+        top: 0;
+        right: 20px;
+        height: 36px;
+        width: 140px;
+        text-transform: uppercase;
+        color: white;
+        background-color: $red;
+        font-size: 12px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    &__info {
+        grid-column: 2/span 4;
+        margin-top: -2px; //to fix gap introduced by picture tag
+    }
+}

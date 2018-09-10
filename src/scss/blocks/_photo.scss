@@ -1,0 +1,14 @@
+.photo {
+
+    &__img-wrapper {
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__info {
+        margin-top: -2px;
+    }
+}

@@ -2,6 +2,10 @@
     @include mobile-grid;
     padding: 46px 0 48px 0;
 
+    &\--photo-bottom {
+        padding: 40px 0;
+    }
+
     &__text {
         grid-column: 2/span 4;
         text-align: center;

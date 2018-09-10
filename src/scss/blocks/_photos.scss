@@ -1,0 +1,10 @@
+.photos {
+    display: grid;
+    @include mobile-grid;
+    grid-auto-flow: column;
+    grid-row-gap: 20px;
+
+    &__item {
+        grid-column: 2/span 4;
+    }
+}
