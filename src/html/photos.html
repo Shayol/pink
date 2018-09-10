@@ -198,32 +198,32 @@
                 Выкладывайте все, что накопилось в телефоне!
             </p>
         </div>
-        <div class="upload">
+        <form action="/upload.html" class="upload">
             <div class="upload__photo-wrapper">
                 <picture class="upload__picture">
                     <source media="(min-width: 660px)" srcset="../img/upload-desktop.png">
-                    <img src="../img/upload-mobile.png" alt="upload" class="upload__photo">
+                    <img src="../img/upload-mobile.png" alt="upload" class="upload__img">
                 </picture>
             </div>
             <div class="upload__tab">
                 <div class="upload__controls">
                     <div class="upload__icons">
-                        <img src="../img/crop.png" alt="crop" class="upload__icon">
+                        <img src="../img/crop.png" alt="crop" class="upload__icon active-icon">
                         <img src="../img/fill.png" alt="fill" class="upload__icon">
                         <img src="../img/contrast.png" alt="contrast" class="upload__icon">
                     </div>
                     <div class="upload__sliders">
-                        <input type="range" name="" id="" class="upload__slider slider slider--crop">
-                        <input type="range" name="" id="" class="upload__slider slider slider--fill">
-                        <input type="range" name="" id="" class="upload__slider slider  slider--contrast">
+                        <input type="range" min="1" max="100" name="crop" class="upload__slider slider slider--crop">
+                        <input type="range" min="1" max="100" name="fill" class="upload__slider slider slider--fill">
+                        <input type="range" min="1" max="100" name="contrast" class="upload__slider slider  slider--contrast">
                     </div>
                 </div>
                 <div class="upload__buttons">
-                    <button class="upload__button round-button upload__post">запостить</button>
-                    <button class="upload__button round-button upload__cancel">отменить</button>
+                    <button type="submit" class="upload__button round-button round-button--post">Запостить</button>
+                    <button class="upload__button round-button round-button--cancel">Отменить</button>
                 </div>
             </div>
-        </div>
+        </form>
         <div class="footer section section--footer section--form">
             ${require('./partials/footer.html')}
         </div>

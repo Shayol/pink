@@ -1,0 +1,20 @@
+.round-button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 55px;
+
+    &\--post {
+        border: 3px solid $red;
+        color: $red;
+    }
+
+    &\--cancel {
+        border: 3px solid $deep-blue;
+        color: $deep-blue;
+        opacity: 0.1
+    }
+}

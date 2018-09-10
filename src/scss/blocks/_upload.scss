@@ -1,0 +1,51 @@
+.upload {
+    padding: 20px 20px 40px 20px;
+    background-color: $grey;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__controls {
+        padding: 42px 18px 28px 18px;
+        position: relative;
+    }
+
+    &__controls::after {
+        content: '';
+        height: 1px;
+        background-color: #dedfe1;
+        position: absolute;
+        left: -20px;
+        right: -20px;
+        top: 100%;
+        z-index: 2;
+        // width: 100%;
+    }
+
+    &__icons {
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__buttons {
+        padding-top: 38px;
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    &__button ~ &__button {
+        margin-top: 12px;
+    }
+
+    &__icon {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(.8) hue-rotate(-90deg);  
+        opacity: 0.3;  
+    }
+}
