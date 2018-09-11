@@ -50,4 +50,40 @@
     &__like-icon {
         padding-right: 20px;
     }
+
+    @media(min-width: $tablet) {
+        padding: 26px 27px 24px 27px;
+        position: relative;
+
+        &:not(&\--panorama) {
+            height: 155px;
+            display: flex;
+
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        &__bottom\--panorama {
+            position: absolute;
+            width: calc(25% - 5px);
+            right: 0;
+            top: 26px;
+        }
+
+        &__top\--panorama {
+            padding-bottom: 0;
+        }
+
+        &__like-icon {
+            order: 1;
+            margin-left: auto;
+            padding-right: 0;
+
+            &\--panorama {
+                padding-right: 27px;
+            }
+        }
+
+    }
 }

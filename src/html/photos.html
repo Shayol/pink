@@ -12,7 +12,7 @@
     <div class="container">
         <div class="hero hero--form hero--photos">
             ${require('./partials/menu.html')}
-            <div class="hero__picture hero__picture--form picture picture--form picture--photos">
+            <div class="hero__picture hero__picture--form picture picture--form hero__picture--photos picture--photos">
                 <p class="picture__text">
                     Фотографии
                     пользователей
@@ -22,7 +22,7 @@
 
         <div class="textual">
             <p class="textual__text">
-                Взгляните на фотографии, которые выкладывают пользователи! <br>
+                Взгляните на фотографии, которые выкладывают пользователи! <br class="break break--mobile">
                 Видите, как не хватает ваших?
             </p>
         </div>
@@ -34,8 +34,8 @@
                     <img src="../img/panorama-mobile.png" alt="panorama" class="panorama__img">
                 </picture>
             </div>
-            <div class="panorama__info photo-info">
-                <div class="photo-info__top">
+            <div class="panorama__info photo-info photo-info--panorama">
+                <div class="photo-info__top photo-info__top--panorama">
                     <span class="photo-info__author">Анна</span>
                     <span class="photo-info__time">(5 минут назад)</span>
                     <p class="photo-info__text">
@@ -44,8 +44,8 @@
                     </p>
                 </div>
 
-                <div class="photo-info__bottom">
-                    <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon">
+                <div class="photo-info__bottom photo-info__bottom--panorama">
+                    <img src="../img/icon-heart.png" alt="like icon" class="photo-info__like-icon photo-info__like-icon--panorama">
                     <span class="photo-info__like-text">
                         нравится:
                     </span>

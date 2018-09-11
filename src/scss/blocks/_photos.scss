@@ -7,4 +7,16 @@
     &__item {
         grid-column: 2/span 4;
     }
+
+    @media(min-width: $tablet) {
+        @include tablet-grid;
+        grid-auto-flow: row;
+
+        &__item:nth-child(odd) {
+            grid-column: 2/span 2;
+        }
+        &__item:nth-child(even) {
+            grid-column: 6/span 2;
+        }
+    }
 }

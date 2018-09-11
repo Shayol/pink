@@ -31,4 +31,20 @@
         grid-column: 2/span 4;
         margin-top: -2px; //to fix gap introduced by picture tag
     }
+
+    @media(min-width: $tablet) {
+        margin-bottom: 50px;
+        
+        &__img {
+            height: 509px;
+        }
+        &__img-wrapper::after {
+            top: 57px;
+        }
+
+        &__like-icon {
+            order: 1;
+            margin-left: auto;
+        }
+    }
 }

@@ -14,4 +14,22 @@
         line-height: 30px;
         color: $deep-blue;
     }
+
+    @media(min-width: $tablet) {
+
+        @include tablet-grid;
+        padding: 95px 0 75px 0;
+
+        &\--photo-bottom {
+            padding: 66px 0;
+        }
+
+        &__text {
+            grid-column: 2/span 6;
+            justify-self: center;
+            width: 80%;
+            font-size: 18px;
+        }
+
+    }
 }
