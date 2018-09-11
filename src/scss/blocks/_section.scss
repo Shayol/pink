@@ -58,6 +58,10 @@
         text-align: center;
     }
 
+    &\--visible {
+        display: initial;
+    }
+
     @media(min-width: $tablet) {
         &__text\--big {
             font-size: 40px;

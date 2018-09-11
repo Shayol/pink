@@ -202,20 +202,20 @@
             <div class="upload__photo-wrapper">
                 <picture class="upload__picture">
                     <source media="(min-width: 660px)" srcset="../img/upload-desktop.png">
-                    <img src="../img/upload-mobile.png" alt="upload" class="upload__img">
+                    <img src="../img/upload-mobile.png" alt="upload" class="upload__img js-upload-img">
                 </picture>
             </div>
             <div class="upload__tab">
                 <div class="upload__controls">
                     <div class="upload__icons">
-                        <img src="../img/crop.png" alt="crop" class="upload__icon active-icon">
-                        <img src="../img/fill.png" alt="fill" class="upload__icon">
-                        <img src="../img/contrast.png" alt="contrast" class="upload__icon">
+                        <img src="../img/crop.png" alt="crop" class="upload__icon js-upload-icon js-icon-crop active-icon">
+                        <img src="../img/fill.png" alt="fill" class="upload__icon js-upload-icon js-icon-fill">
+                        <img src="../img/contrast.png" alt="contrast" class="upload__icon js-upload-icon js-icon-contrast">
                     </div>
                     <div class="upload__sliders">
-                        <input type="range" min="1" max="100" name="crop" class="upload__slider slider slider--crop">
-                        <input type="range" min="1" max="100" name="fill" class="upload__slider slider slider--fill">
-                        <input type="range" min="1" max="100" name="contrast" class="upload__slider slider  slider--contrast">
+                        <input type="range" min="1" max="100" name="crop" class="upload__slider slider slider--crop js-slider js-slider-crop">
+                        <input type="range" value="0" min="0" max="360" name="fill" class="upload__slider slider slider--fill js-slider js-slider-fill">
+                        <input type="range" value="100" min="0" max="200" name="contrast" class="upload__slider slider slider--contrast js-slider js-slider-contrast">
                     </div>
                 </div>
                 <div class="upload__buttons">
@@ -224,7 +224,7 @@
                 </div>
             </div>
         </form>
-        <div class="footer section section--footer section--form">
+        <div class="footer section section--footer section--visible">
             ${require('./partials/footer.html')}
         </div>
     </div>

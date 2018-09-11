@@ -8,7 +8,7 @@
     }
 
     &__controls {
-        padding: 42px 18px 28px 18px;
+        padding: 42px 18px 30px 18px;
         position: relative;
     }
 
@@ -25,7 +25,7 @@
     }
 
     &__icons {
-        padding-bottom: 32px;
+        padding-bottom: 26px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -47,5 +47,9 @@
         filter: grayscale(1);
         -webkit-filter: grayscale(.8) hue-rotate(-90deg);  
         opacity: 0.3;  
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 }
