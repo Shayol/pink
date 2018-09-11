@@ -21,7 +21,6 @@
         right: -20px;
         top: 100%;
         z-index: 2;
-        // width: 100%;
     }
 
     &__icons {
@@ -39,17 +38,103 @@
         width: 100%;
     }
 
-    &__button ~ &__button {
+    &__button~&__button {
         margin-top: 12px;
     }
 
     &__icon {
         filter: grayscale(1);
-        -webkit-filter: grayscale(.8) hue-rotate(-90deg);  
-        opacity: 0.3;  
+        -webkit-filter: grayscale(.8) hue-rotate(-90deg);
+        opacity: 0.3;
 
         &:hover {
             opacity: 0.5;
         }
+    }
+
+    @media(min-width: $tablet) {
+        @include tablet-grid;
+        padding: 57px 0 54px 0;
+
+        &__photo-wrapper {
+            grid-column: 2/span 2;
+        }
+
+        &__tab {
+            grid-column: 6/span 2;
+            padding: 0 4.3% 0 9%;
+        }
+
+        &__controls {
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+            &::after {
+                display: none;
+            }
+
+        }
+
+        &__buttons {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0;
+        }
+
+        &__sliders {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+
+        &__slider-wrapper {
+            border-bottom: 1px solid #dedfe1;
+            height: 35%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            &:first-child {
+                height: 30%;
+            }
+        }
+
+        &__icons {
+            display: flex;
+            flex-direction: column;
+            // justify-content: ;
+            padding: 0;
+            width: 20%;
+        }
+
+        &__icon {
+            filter: none;
+            opacity: 1;
+            height: 22px;
+            width: 22px;
+        }
+
+        &__icon-wrapper {
+            border-bottom: 1px solid #dedfe1;
+            height: 35%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &:first-child {
+                height: 30%;
+            }
+        }
+
+        &__button~&__button {
+            margin-top: 24px;
+        }
+
     }
 }

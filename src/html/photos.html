@@ -208,14 +208,26 @@
             <div class="upload__tab">
                 <div class="upload__controls">
                     <div class="upload__icons">
-                        <img src="../img/crop.png" alt="crop" class="upload__icon js-upload-icon js-icon-crop active-icon">
-                        <img src="../img/fill.png" alt="fill" class="upload__icon js-upload-icon js-icon-fill">
-                        <img src="../img/contrast.png" alt="contrast" class="upload__icon js-upload-icon js-icon-contrast">
+                        <div class="upload__icon-wrapper">
+                            <img src="../img/crop.png" alt="crop" class="upload__icon js-upload-icon js-icon-crop active-icon">
+                        </div>
+                        <div class="upload__icon-wrapper">
+                            <img src="../img/fill.png" alt="fill" class="upload__icon js-upload-icon js-icon-fill">
+                        </div>
+                        <div class="upload__icon-wrapper">
+                            <img src="../img/contrast.png" alt="contrast" class="upload__icon js-upload-icon js-icon-contrast">
+                        </div>
                     </div>
                     <div class="upload__sliders">
-                        <input type="range" min="1" max="100" name="crop" class="upload__slider slider slider--crop js-slider js-slider-crop">
-                        <input type="range" value="0" min="0" max="360" name="fill" class="upload__slider slider slider--fill js-slider js-slider-fill">
-                        <input type="range" value="100" min="0" max="200" name="contrast" class="upload__slider slider slider--contrast js-slider js-slider-contrast">
+                        <div class="upload__slider-wrapper">
+                            <input type="range" min="1" max="100" name="crop" class="upload__slider slider slider--crop js-slider js-slider-crop">
+                        </div>
+                        <div class="upload__slider-wrapper">
+                            <input type="range" value="0" min="0" max="360" name="fill" class="upload__slider slider slider--fill js-slider js-slider-fill">
+                        </div>
+                        <div class="upload__slider-wrapper">
+                            <input type="range" value="100" min="0" max="200" name="contrast" class="upload__slider slider slider--contrast js-slider js-slider-contrast">
+                        </div>
                     </div>
                 </div>
                 <div class="upload__buttons">

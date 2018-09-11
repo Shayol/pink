@@ -29,4 +29,10 @@
         background: $grey; 
         cursor: pointer; 
     }
+
+    @media(min-width: $tablet) {
+        display: block;
+
+        border-bottom: 1px solid #dedfe1;
+    }
 }
