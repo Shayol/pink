@@ -70,6 +70,10 @@
             grid-template-columns: 1fr 80% 1fr;
         }
 
+        &\--photos {
+            grid-template-rows: auto 105px;
+        }
+
         &__content {
             margin-right: auto;
             margin-left: auto;

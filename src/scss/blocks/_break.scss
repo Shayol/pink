@@ -2,6 +2,9 @@
     &\--desktop {
         display: none;
     }
+    &\--mobile {
+        display: initial;
+    }
     @media(min-width: $tablet) {
         &\--mobile {
             display: none;

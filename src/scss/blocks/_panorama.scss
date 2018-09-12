@@ -10,6 +10,7 @@
 
     &__img-wrapper {
         grid-column: 1/span 6;
+        position: relative;
     }
 
     &__img-wrapper::after {
@@ -30,6 +31,7 @@
     &__info {
         grid-column: 2/span 4;
         margin-top: -2px; //to fix gap introduced by picture tag
+        max-width: 940px;
     }
 
     @media(min-width: $tablet) {
@@ -45,6 +47,17 @@
         &__like-icon {
             order: 1;
             margin-left: auto;
+        }
+
+        &__info {
+            margin: -2px auto 0 auto;
+        }
+    }
+    @media(min-width: $desktop) {
+        display: block;
+
+        &__img-wrapper::after {
+            right: calc(50% - 470px)
         }
     }
 }

@@ -32,4 +32,16 @@
         }
 
     }
+
+    @media(min-width: $desktop) {
+        padding: 92px 0 86px 0;
+    }
+
+    @media(min-width: $desktop) {
+
+        &\--photo-bottom {
+            padding: 62px 0;
+        }
+
+    }
 }

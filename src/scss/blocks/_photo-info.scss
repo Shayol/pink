@@ -86,4 +86,13 @@
         }
 
     }
+    @media(min-width: $desktop) {
+        &__bottom\--panorama {
+            width: 16%;
+        }
+
+        &\--panorama {
+            padding-top: 22px;
+        }
+    }
 }
