@@ -47,7 +47,7 @@
             color: white;
             text-align: center;
             display: block;
-            line-height: 1;
+            line-height: 1.2;
         }
 
         &__content {
@@ -60,10 +60,13 @@
     }
 
     @media(min-width: $desktop) {
+        &__content {
+            width: 32%;
+        }
         &__button {
             font-size: 21px;
             line-height: 18px;
-            padding-top: 19px;
+            padding-top: 17px;
             padding-bottom: 16px;
             border-radius: 40px;
         }

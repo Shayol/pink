@@ -40,4 +40,25 @@
             margin-bottom: 35px;
         }
     }
+
+    @media(min-width: $desktop) {
+        padding-top: 65px;
+        padding-bottom: 5px;
+
+        &__item {
+            width: 33%;
+
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+
+        &__text {
+            margin-top: 26px;
+        }
+
+        &__header {
+            margin-bottom: 55px;
+        }
+    }
 }

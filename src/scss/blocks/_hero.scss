@@ -73,21 +73,27 @@
     }
 
     @media(min-width: $desktop) {
-        grid-template-columns: 1fr 32% 68% 1fr;
-        grid-template-rows: 110px 120px 495px 125px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px 110px 510px 122px;
 
         
 
         &__menu {
-            grid-area: 1/1/2/5;
+            grid-area: 1/1/2/2;
         }
 
         &__download {
-            grid-area: 3/2/4/3;
+            grid-area: 3/1/4/2;
+            max-width: 940px;
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
         }
 
         &__picture {
-            grid-area: 1/1/5/11;
+            grid-area: 1/1/5/2;
         }
 
         &\--form {

@@ -38,9 +38,7 @@
             display: grid;
             justify-content: stretch;
             text-transform: none;
-        }
-
-       
+        }     
 
         &__col {
             grid-template-rows: 80px repeat(3, 45px);
@@ -70,6 +68,12 @@
             text-align: left;
             justify-content: flex-start;
             border-left: 2px solid #e5e5e5;
+        }
+    }
+
+    @media(min-width: $desktop) {
+        &__col {
+            grid-template-rows: 98px repeat(3, 60px);
         }
     }
 }

@@ -3,6 +3,7 @@
 
     @media (min-width: $tablet) {
         display: block;
+
         &__content {
             display: grid;
             grid-template-columns: 1fr 1fr 10px 50%;
@@ -45,21 +46,32 @@
             text-align: left;
         }
     }
+
     @media(min-width: $desktop) {
+        
         &__content {
             @include desktop-grid;
-            grid-template-rows: 430px;
+            grid-template-rows: 425px;
             align-items: center;
         }
+
         &__clock {
+            margin-top: -50px;
+            font-size: 120px;
+            line-height: 220px;
             width: 298px;
             height: 345px;
             grid-area: 1/1/2/4;
             background: url("../img/clock-red-circle-desktop.png") 50% 75% no-repeat, url("../img/timer-desktop.png") 50% 50% no-repeat;
         }
+
         &__desc {
             grid-area: 1/4/2/9;
             height: 200px;
+        }
+
+        &__link {
+            font-size: 18px;
         }
     }
 }

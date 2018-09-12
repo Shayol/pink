@@ -1,6 +1,6 @@
 .map {
     width: 100%;
-    height: 220px;
+    
     position: relative;
     &::before, &::after {
         z-index: 1;
@@ -23,9 +23,5 @@
 
     &__iframe {
         width: 100%;
-    }
-
-    @media(min-width: $tablet) {
-        height: 375px;
     }
 }

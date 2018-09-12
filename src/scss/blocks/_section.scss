@@ -46,6 +46,10 @@
         }
     }
 
+    &\--map {
+        height: 220px;
+    }
+
     &\--footer {
         display: none;
     }
@@ -83,6 +87,10 @@
             height: 484px;
         }
 
+        &\--map {
+            height: 375px;
+        }
+
         &\--footer {
             height: 128px;
             display: block;
@@ -94,6 +102,11 @@
             height: 198px;
             line-height: 1.2;
         }
+
+        &\--map {
+            height: 500px;
+        }
+
         &__text {
             font-size: 18px;
         }
@@ -102,6 +115,7 @@
             font-size: 50px;
             font-weight: 300;
         }
+
         &\--information {
             height: initial;
         }
@@ -113,6 +127,26 @@
         &\--research {
             margin-top: 0;
             margin-bottom: 72px;
+        }
+
+        &\--grey-on-desktop {
+            background-color: $grey;
+        }
+
+        &\--triangle-on-desktop {
+
+            &::after {
+                position: absolute;
+                display: block;
+                top: 100%;
+                left: 0;
+                width: 100vw;
+                content: '';
+                border-right: 100vw solid $grey;
+                z-index: 10;
+                height: 7.575vw;
+                border-top: 7.575vw solid white;
+            }
         }
 
     }

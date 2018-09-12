@@ -71,10 +71,25 @@
     }
     
     @media(min-width: $desktop) {
+        padding-top: 148px;
+        padding-bottom: 98px;
         &__table {
             max-width: 940px;
             margin-left: auto;
             margin-right: auto;
         }
+
+        &__feature {
+            font-size: 18px;
+        }
+
+        &__name {
+            font-size: 18px;
+        }
+
+        &__number {
+            font-size: 24px;
+        }
+        
     }
 }

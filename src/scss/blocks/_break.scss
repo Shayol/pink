@@ -9,13 +9,15 @@
         &\--mobile {
             display: none;
         }
-        &\--tablet {
-            display: none;
-        }
+        
     }
     @media(min-width: $desktop) {
         &\--desktop {
             display: initial;
+        }
+
+        &\--tablet {
+            display: none;
         }
     }
 }
