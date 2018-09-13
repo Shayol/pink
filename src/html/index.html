@@ -84,54 +84,77 @@
                 </div>
             </div>
         </div>
-        <div class="section review section--triangle-on-desktop">
+        <div class="section carousel review section--triangle-on-desktop">
+            <div class="carousel__wrapper review__wrapper">
+                <input type="radio" class="carousel__radio" name="carousel" id="radio-1" checked>
+                <input type="radio" class="carousel__radio" name="carousel" id="radio-2">
+                <input type="radio" class="carousel__radio" name="carousel" id="radio-3">
 
-            <div class="review__container">
-                <div class="review__item" id="review1">
-                    <div class="review__item-wrapper">
-                        <div class="review__author">Николай Петров</div>
-                        <p class="section__text review__text">«Это приложение перевернуло мой мир и позволило по-новому
-                            взглянуть на привычные серые вещи! А еще я
-                            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                        </p>
-                        <p class="section__text review__text review__age">
-                            25 лет, водитель трамвая
-                        </p>
-                    </div>
+                <div class="carousel__prev">
+                    <label for="radio-1" class="carousel__prev-item"></label>
+                    <label for="radio-2" class="carousel__prev-item"></label>
+                    <label for="radio-3" class="carousel__prev-item"></label>
                 </div>
-                <div class="review__item" id="review2">
-                    <div class="review__item-wrapper">
-                        <div class="review__author">Иван Сусанович</div>
-                        <p class="section__text review__text">«Это приложение перевернуло мой мир и позволило по-новому
-                            взглянуть на привычные серые вещи! Особенно
-                            на тайгу где я сейчас живу. Я теперь могу фотографировать вечную мерзлоту день и ночь.»
-                        </p>
-                        <p class="section__text review__text review__age">
-                            28 лет, оленевод
-                        </p>
+                <div class="carousel__container review__container">
+                    <div class="review__item carousel__item" id="review1">
+                        <div class="review__item-wrapper">
+                            <div class="review__author">Николай Петров</div>
+                            <p class="section__text review__text">«Это приложение перевернуло мой мир и позволило
+                                по-новому
+                                взглянуть на привычные серые вещи! А еще я
+                                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                            </p>
+                            <p class="section__text review__text review__age">
+                                25 лет, водитель трамвая
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="review__item" id="review3">
-                    <div class="review__item-wrapper">
-                        <div class="review__author">Жора Покос</div>
-                        <p class="section__text review__text">«Теперь я могу присылать еще больше вариаций селфи всем
-                            кто
-                            их не просил.»
-                        </p>
-                        <p class="section__text review__text review__age">
-                            45 лет, безработный
-                        </p>
+                    <div class="review__item carousel__item" id="review2">
+                        <div class="review__item-wrapper">
+                            <div class="review__author">Иван Сусанович</div>
+                            <p class="section__text review__text">«Это приложение перевернуло мой мир и позволило
+                                по-новому
+                                взглянуть на привычные серые вещи! Особенно
+                                на тайгу где я сейчас живу. Я теперь могу фотографировать вечную мерзлоту день и ночь.»
+                            </p>
+                            <p class="section__text review__text review__age">
+                                28 лет, оленевод
+                            </p>
+                        </div>
                     </div>
-                </div>
+                    <div class="review__item carousel__item" id="review3">
+                        <div class="review__item-wrapper">
+                            <div class="review__author">Жора Покос</div>
+                            <p class="section__text review__text">«Теперь я могу присылать еще больше вариаций селфи
+                                всем
+                                кто
+                                их не просил.»
+                            </p>
+                            <p class="section__text review__text review__age">
+                                45 лет, безработный
+                            </p>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="carousel__next">
+                    <label for="radio-1" class="carousel__next-item"></label>
+                    <label for="radio-2" class="carousel__next-item"></label>
+                    <label for="radio-3" class="carousel__next-item"></label>
+                </div>
             </div>
-
         </div>
-        <div class="section section--triangle review__controls controls">
-            <a href="#review1" class="controls__link"></a>
-            <a href="#review2" class="controls__link controls__link--central"></a>
-            <a href="#review3" class="controls__link"></a>
-        </div>
+        <!-- <div class="section carousel__nav section--triangle review__controls controls">
+            <a href="#review1" class="controls__link">
+                <label for="radio-1" class="carousel__nav-item"></label>
+            </a>
+            <a href="#review2" class="controls__link controls__link--central">
+                <label for="radio-2" class="carousel__nav-item"></label>
+            </a>
+            <a href="#review3" class="controls__link">
+                <label for="radio-3" class="carousel__nav-item"></label>
+            </a>
+        </div> -->
         <div class="section section--grey price">
             <div class="price__table table">
 

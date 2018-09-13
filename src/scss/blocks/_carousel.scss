@@ -1,0 +1,140 @@
+.carousel {
+    &__radio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    &__prev,
+    &__next {
+        display: none;
+    }
+
+    &__container {
+        font-size: 0;
+        white-space: nowrap;
+    }
+
+    &__item {
+        display: inline-block;
+        white-space: initial;
+        vertical-align: top;
+    }
+
+
+    @media(min-width: $desktop) {
+        &__wrapper {
+            position: relative;
+        }
+
+        &__item {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+
+            // &:first-child {
+            //     opacity: 1;
+            //     z-index: 1;
+            // }
+        }
+
+        &__prev,
+        &__next {
+            display: block;
+            position: absolute;
+            top: 20px;
+            width: 22px;
+            height: 41px;
+            z-index: 3;
+        }
+
+        &__prev {
+            left: 0;
+        }
+
+        &__next {
+            right: 0;
+        }
+
+        &__prev-item {
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 22px;
+            height: 41px;
+            background-image: url("../img/left-arrow.png");
+            background-repeat: no-repeat;
+            opacity: 0;
+
+            // &:first-child {
+            //     opacity: 1;
+            //     z-index: 1;
+            // }
+        }
+
+        &__next-item {
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/right-arrow.png");
+            background-repeat: no-repeat;
+            opacity: 0;
+
+            // &:nth-child(2) {
+            //     opacity: 1;
+            //     z-index: 1;
+            // }
+        }
+
+        @for $i from 1 through 3 {
+            &__radio:nth-child(#{$i}):checked {
+
+                ~.carousel__container>.carousel__item,
+                ~.carousel__container .carousel__prev-item,
+                ~.carousel__container .carousel__next-item {
+                    opacity: 0;
+                    z-index: 0;
+                }
+
+                ~.carousel__container>.carousel__item:nth-child(#{$i}) {
+                    opacity: 1;
+                    z-index: 1;
+                }
+
+                ~.carousel__prev>.carousel__prev-item:nth-child(#{$i - 1}) {
+                    opacity: 1;
+                    z-index: 1;
+
+                    @if $i==1 {
+                        opacity: 0;
+                        z-index: 0;
+                    }
+                }
+
+                ~.carousel__next>.carousel__next-item:nth-child(#{$i + 1}) {
+                    opacity: 1;
+                    z-index: 1;
+
+                    @if $i==3 {
+                        opacity: 0;
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
