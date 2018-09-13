@@ -1,0 +1,9 @@
+@mixin form-input-mixin-hover {
+    &:hover {
+        border-color: $deep-blue;
+    }
+    &:focus {
+        border-color: $red;
+        outline: none;
+    }
+}

@@ -1,0 +1,20 @@
+@mixin mobile-menu-mixin-hover {
+    &:hover {
+        color: $red;
+    }
+    &:active {
+        color: $red;
+        opacity: 0.3;
+    }
+}
+
+@mixin menu-mixin-hover {
+    &:hover {
+        color: $red;
+    }
+    &:active {
+        color: white;
+        opacity: 0.3;
+    }
+}
+

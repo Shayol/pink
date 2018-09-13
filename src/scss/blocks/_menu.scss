@@ -24,6 +24,7 @@
         color: #fff;
         text-decoration: none;
         height: 100%;
+        @include mobile-menu-mixin-hover;
     }
 
     &__close-icon {
@@ -82,6 +83,7 @@
             text-transform: none;
             line-height: 110px;
             font-weight: 400;
+            @include menu-mixin-hover;
         }
 
         &__item {

@@ -8,6 +8,15 @@
         opacity: 0;
         z-index: 2;
         margin: 0;
+        @include form-input-mixin-hover;
+    }
+
+    &__input:hover ~ &__decorator {
+        border-color: $deep-blue;
+    }
+
+    &__input:active ~ &__decorator{
+        border-color: $red;
     }
     &__decorator {
         position: absolute;

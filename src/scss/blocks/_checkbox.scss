@@ -1,6 +1,5 @@
 .checkbox {
     position: relative;
-    // grid-column: 1/2;
     height: 39px;
     width: 39px;
 
@@ -11,6 +10,14 @@
         z-index: 2;
         margin: 0;
         position: relative;
+    }
+
+    &__input:hover ~ &__decorator {
+        border-color: $deep-blue;
+    }
+
+    &__input:active ~ &__decorator {
+        border-color: $red;
     }
 
     &__decorator {
