@@ -1,20 +1,32 @@
 .controls {
     display: flex;
     justify-content: center;
+    align-items: center;
+
     &__link {
         display: block;
         width: 7px;
         height: 7px;
         background-color: $deep-blue;
-        opacity: 0.3; 
+        opacity: 0.3;
         border-radius: 50%;
         cursor: pointer;
+
         &\--central {
-            margin: 0 22px;
+            margin: 0 20px;
         }
+
+        &:active {
+            width: 12px;
+            height: 12px;
+            border: 3px solid $deep-blue;
+            background-color: #ffffff;
+            opacity: 1;
+        }
+
         &\--active {
-            width: 14px;
-            height: 14px;
+            width: 12px;
+            height: 12px;
             border: 3px solid $deep-blue;
             background-color: #ffffff;
             opacity: 1;

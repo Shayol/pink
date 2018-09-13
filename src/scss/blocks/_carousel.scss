@@ -23,6 +23,18 @@
         vertical-align: top;
     }
 
+    // @for $n from 1 through 3 {
+    //     &__radio:nth-child(#{$n}):checked {
+    //         ~.carousel__nav > .carousel__nav-link:nth-child(#{$n}) {
+    //             width: 12px;
+    //             height: 12px;
+    //             border: 3px solid $deep-blue;
+    //             background-color: #ffffff;
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
+
 
     @media(min-width: $desktop) {
         &__wrapper {
@@ -37,11 +49,6 @@
             right: 0;
             bottom: 0;
             opacity: 0;
-
-            // &:first-child {
-            //     opacity: 1;
-            //     z-index: 1;
-            // }
         }
 
         &__prev,
@@ -73,11 +80,6 @@
             background-image: url("../img/left-arrow.png");
             background-repeat: no-repeat;
             opacity: 0;
-
-            // &:first-child {
-            //     opacity: 1;
-            //     z-index: 1;
-            // }
         }
 
         &__next-item {
@@ -91,11 +93,6 @@
             background-image: url("../img/right-arrow.png");
             background-repeat: no-repeat;
             opacity: 0;
-
-            // &:nth-child(2) {
-            //     opacity: 1;
-            //     z-index: 1;
-            // }
         }
 
         @for $i from 1 through 3 {
