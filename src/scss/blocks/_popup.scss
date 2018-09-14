@@ -1,0 +1,130 @@
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    display: none;
+
+    &__body {
+        max-width: 780px;
+    }
+
+    &__body {
+        box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+        background-color: #ffffff;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__header {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__top {
+        padding: 0 22px 0 22px;
+    }
+
+    &__header {
+        padding-top: 40px;
+    }
+
+    &\--success &__top {
+        padding-bottom: 32px;
+    }
+
+    &\--success &__bottom {
+        padding: 50px 22px 54px 22px;
+        background-color: $grey;
+    }
+
+    &\--failure &__bottom {
+        padding: 42px 22px 54px 22px;
+    }
+
+
+
+    &__button {
+        width: 100%;
+    }
+
+    @media(min-width: $tablet) {
+        justify-content: center;
+
+        &__body {
+            width: 70%;
+        }
+
+        &__header {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        &__text {
+            font-size: 21px;
+            line-height: 26px;
+        }
+
+        &__top {
+            align-items: center;
+        }
+
+        &__top {
+            padding: 0;
+        }
+
+        &\--success &__top {
+            padding-bottom: 36px;
+        }
+
+        &\--success &__header {
+            width: 66%;
+        }
+
+        &\--success &__text {
+            width: 66%;
+        }
+
+        &\--failure &__text {
+            width: 63%;
+        }
+
+        &__button {
+            width: 63%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media(min-width: $desktop) {
+        &__header {
+            padding-top: 45px;
+            width: 50%;
+        }
+
+        &__text {
+            width: 50%;
+        }
+
+        &__button {
+            width: 58.3%;
+        }
+    }
+}
