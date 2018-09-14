@@ -25,6 +25,7 @@
         text-decoration: none;
         height: 100%;
         @include mobile-menu-mixin-hover;
+        padding-bottom: 5px;
 
         &\--active {            
             border-bottom: 1px solid white;
