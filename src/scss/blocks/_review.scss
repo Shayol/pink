@@ -1,16 +1,10 @@
 .review {
     height: 350px;
     position: relative;
-    overflow: hidden;
 
     &__container {
         overflow-x: scroll;
-        -ms-overflow-style: none; // IE 10+
-        overflow: -moz-scrollbars-none; // Firefox
-    }
-
-    &__container::-webkit-scrollbar {
-        display: none; // Safari and Chrome
+        
     }
 
     &__age {

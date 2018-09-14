@@ -15,6 +15,14 @@
     &__container {
         font-size: 0;
         white-space: nowrap;
+        overflow: scroll;
+        -ms-overflow-style: none; // IE 10+
+        // overflow: -moz-scrollbars-none; // Firefox
+        height: 110%;
+    }
+
+    &__container::-webkit-scrollbar {
+        display: none; // Safari and Chrome
     }
 
     &__item {
