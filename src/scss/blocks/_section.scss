@@ -28,6 +28,7 @@
             height: 9.375vw;
             width: 100vw;
             max-width: 960px;
+            overflow: hidden;
             content: '';
             border-top: 9.375vw solid white;
             border-right: 100vw solid $grey;
@@ -134,6 +135,10 @@
             background-color: $grey;
         }
 
+        &\--triangle::after {
+            border-right-width: 960px;
+        }
+
         &\--triangle-on-desktop {
 
             &::after {
@@ -143,7 +148,7 @@
                 left: 0;
                 width: 100vw;
                 content: '';
-                border-right: 100vw solid $grey;
+                border-right: 960px solid $grey;
                 z-index: 10;
                 height: 7.575vw;
                 border-top: 7.575vw solid white;
