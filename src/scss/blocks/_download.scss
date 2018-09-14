@@ -18,6 +18,16 @@
         padding-bottom: 17px;
         border: 3px solid #ffffff;
         border-radius: 55px;
+
+        &:hover {
+            background-color: white;
+            color: $red;
+        }
+
+        &:active {
+            background-color: white;
+            color: hsla(344, 68%, 49%, 0.3);
+        }
     }
 
     &__text {

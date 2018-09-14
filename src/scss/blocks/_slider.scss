@@ -19,6 +19,10 @@
         border-radius: 50%;
         border: 2px solid $red;
         cursor: pointer; 
+
+        &:active {
+            background-color: $red;
+        }
     }
     
     &::-moz-range-thumb {
@@ -28,6 +32,10 @@
         border: 2px solid $red;
         background: $grey; 
         cursor: pointer; 
+
+        &:active {
+            background-color: $red;
+        }
     }
 
     @media(min-width: $tablet) {

@@ -56,6 +56,20 @@ window.addEventListener('load', function () {
 
     })();
 
+    (function setActiveLocation() {
+        let links = document.querySelectorAll(".js-menu-link");
+        let currentHref = window.location.href;
+
+        links.forEach(link => {
+            if(currentHref == link.href) {
+                link.classList.add("menu__link--active");
+            }
+            else if(currentHref == link.href) {
+                link.classList.add("menu__link--active");
+            }
+        });
+    })();
+
     let icons = {
         els: document.querySelectorAll(".js-upload-icon"),
         sliders: document.querySelectorAll(".js-slider"),

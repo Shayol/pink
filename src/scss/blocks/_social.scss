@@ -3,7 +3,6 @@
     justify-content: center;
 
     &__link {
-        display: block;
         height: 50px;
         width: 50px;
         border-radius: 50%;
@@ -16,6 +15,18 @@
             margin-left: 15px;
             margin-right: 15px;
         }
+
+        &:hover {
+            border-color: $deep-blue;
+        }
+
+        &:active {
+            border-color: #28364525;
+
+            .social__icon {
+                opacity: .3;
+            }
+        } 
     }
     @media(min-width: $tablet) {
         justify-content: space-between;

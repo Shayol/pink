@@ -10,11 +10,23 @@
     &\--post {
         border: 3px solid $red;
         color: $red;
+        &:hover {
+            background-color: $red;
+        }
+        &:active {
+            background-color: $red;
+            color: hsla(360, 100%, 100%, 0.3);
+        }
     }
 
     &\--cancel {
         border: 3px solid $deep-blue;
         color: $deep-blue;
-        opacity: 0.1
+        opacity: 0.1;
+
+        &:active {
+            opacity: 0.6;
+            background-color: $deep-blue;
+        }
     }
 }

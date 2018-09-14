@@ -25,6 +25,10 @@
         text-decoration: none;
         height: 100%;
         @include mobile-menu-mixin-hover;
+
+        &\--active {            
+            border-bottom: 1px solid white;
+        }
     }
 
     &__close-icon {

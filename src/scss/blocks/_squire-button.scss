@@ -14,4 +14,12 @@
         border: 2px solid #1c9b5e;
         background-color: #1c9b5e;
     }
+
+    &:active {
+        border: 2px solid #1c9b5e;
+        background-color: #1c9b5e;
+        outline: none;
+
+        color: hsla(360, 100%, 100%, 0.3);
+    }
 }
