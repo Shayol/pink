@@ -1,6 +1,6 @@
 .menu {
     overflow: hidden;
-
+    position: relative;
     &__item {
         display: none;
         text-align: center;
@@ -44,6 +44,10 @@
 
         & .menu__item:not(.menu__item\--top) {
             height: 63px;
+        }
+
+        & .menu__item\--top {
+            background-color: $deep-blue;
         }
 
         & .menu__close-icon {

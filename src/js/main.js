@@ -1,14 +1,16 @@
 import "../scss/main.scss";
+import swipe from './swipe';
 
 window.addEventListener('load', function () {
-    let controls = {
+    const tableSpace = 6.25;
+    let tableControls = {
         elements: document.querySelectorAll(".price__controls .controls__link"),
         table: document.querySelector(".table"),
         addListeners: function () {
             for (let i = 0; i < this.elements.length; i++) {
                 let el = this.elements[i];
                 el.addEventListener('click', e => {
-                    let left = !i ? 6.25 : "-" + (87.5 * 1 - 6.25);
+                    let left = !i ? tableSpace : "-" + (87.5 * i - tableSpace);
                     this.table.style.left = left + "vw";
                     for (var n of this.elements) {
                         n.classList.remove("controls__link--active");
@@ -18,6 +20,42 @@ window.addEventListener('load', function () {
             }
         }
     };
+
+    function handleSwipe(direction) {
+        let table = document.querySelector(".js-table");
+        let controls = document.querySelectorAll(".price__controls .controls__link");
+        let currentActive = 1;
+
+        controls.forEach((el,index) => {
+            if(el.classList.contains("controls__link--active")) {
+                currentActive = index;
+            }
+        });
+
+
+        if(direction == "left" && currentActive != 2) { 
+            controls[currentActive + 1].click();
+        }
+        else if(direction == "right" && currentActive != 0) {
+            controls[currentActive - 1].click();
+        }
+
+        // if(direction == "right") {
+        //     console.log(table.getPropertyValue('left'))
+        //     if(table.getPropertyValue('left') != tableSpace + "vw") {
+        //         let shift = Number(table.style.left.split("vw")[0]);
+        //         table.style.left = (shift + 87.5 - tableSpace) + "wv";
+        //     }
+        // }
+
+        // else if(direction == "left") {
+        //     if(table.style.left != 167.5 + "vw") {
+        //         let shift = Number(table.style.left.split("vw")[0]);
+        //         table.style.left = (shift - 87.5 - tableSpace) + "wv";
+        //     }
+        // }
+
+    }
 
     let menu = {
         element: document.querySelector(".menu"),
@@ -138,7 +176,7 @@ window.addEventListener('load', function () {
 
 
 
-    controls.addListeners();
+    tableControls.addListeners();
 
     menu.addListeners();
 
@@ -147,4 +185,6 @@ window.addEventListener('load', function () {
     popups.addListeners();
 
     form.addListeners();
+
+    swipe(tableControls.table, handleSwipe);
 });
