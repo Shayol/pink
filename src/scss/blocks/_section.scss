@@ -3,23 +3,18 @@
         margin-top: 60px;
         margin-bottom: 52px;
     }
-
     &\--information {
         height: 217px;
     }
-
     &\--grey {
         background-color: $grey;
     }
-
     &\--description {
         height: 784px;
     }
-
     &\--triangle {
         z-index: 2;
         position: relative;
-
         &::after {
             position: absolute;
             display: block;
@@ -34,27 +29,22 @@
             z-index: 10;
         }
     }
-
     &__text {
         text-align: center;
         font-size: 14px;
         line-height: 24px;
         color: $deep-blue;
-
         &\--big {
             font-size: 24px;
             font-weight: 300;
         }
     }
-
     &\--map {
         height: 220px;
     }
-
     &\--footer {
         display: none;
     }
-
     &__header {
         font-size: 18px;
         font-weight: 700;
@@ -62,84 +52,66 @@
         color: $deep-blue;
         text-align: center;
     }
-
     &\--visible {
         display: initial;
     }
-
     @media(min-width: $tablet) {
         &__text\--big {
             font-size: 40px;
             line-height: 1;
         }
-
         &\--information {
             height: 240px;
         }
-
         &\--triangle {
             &::after {
                 height: 7.575vw;
                 border-top: 7.575vw solid white;
             }
         }
-
         &\--description {
             height: 484px;
         }
-
         &\--map {
             height: 375px;
         }
-
         &\--footer {
             height: 128px;
             display: block;
         }
     }
-
     @media(min-width: $desktop) {
         &\--footer {
             height: 198px;
             line-height: 1.2;
         }
-
         &\--map {
             height: 500px;
         }
-
         &__text {
             font-size: 18px;
         }
-
         &__text\--big {
             font-size: 50px;
             font-weight: 300;
         }
-
         &\--information {
             height: initial;
         }
-
         &\--description {
             height: initial;
         }
-
         &\--research {
             margin-top: 0;
             margin-bottom: 72px;
         }
-
         &\--grey-on-desktop {
             background-color: $grey;
         }
-
         &\--triangle::after {
-            border-right-width: 960px;
+            border-right-width: 1200px;
         }
-
         &\--triangle-on-desktop {
-
             &::after {
                 position: absolute;
                 display: block;
@@ -147,12 +119,11 @@
                 left: 0;
                 width: 100vw;
                 content: '';
-                border-right: 960px solid $grey;
+                border-right: 1200px solid $grey;
                 z-index: 10;
                 height: 7.575vw;
                 border-top: 7.575vw solid white;
             }
         }
-
     }
 }

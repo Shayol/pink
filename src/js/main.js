@@ -26,17 +26,17 @@ window.addEventListener('load', function () {
         let controls = document.querySelectorAll(".price__controls .controls__link");
         let currentActive = 1;
 
-        controls.forEach((el,index) => {
-            if(el.classList.contains("controls__link--active")) {
+        controls.forEach((el, index) => {
+            if (el.classList.contains("controls__link--active")) {
                 currentActive = index;
             }
         });
 
 
-        if(direction == "left" && currentActive != 2) { 
+        if (direction == "left" && currentActive != 2) {
             controls[currentActive + 1].click();
         }
-        else if(direction == "right" && currentActive != 0) {
+        else if (direction == "right" && currentActive != 0) {
             controls[currentActive - 1].click();
         }
 
@@ -55,6 +55,43 @@ window.addEventListener('load', function () {
         //     }
         // }
 
+    }
+
+    function sliderNav() {
+        let carousel = document.querySelector(".carousel");
+        if (carousel) {
+            let scrollableEl = carousel.querySelector(".carousel__container");
+
+            scrollHandler();
+
+            scrollableEl.addEventListener("scroll", scrollHandler);
+
+            function scrollHandler() {
+                let items = scrollableEl.querySelectorAll(".review__item-wrapper");
+
+                Array.prototype.forEach.call(items, function (item, index) {
+
+                    if (isInViewport(item)) {
+                        let navs = carousel.querySelectorAll(".controls__link");
+
+                        Array.prototype.forEach.call(navs, function (nav) {
+                            nav.classList.remove("controls__link--active");
+                        });
+
+                        navs[index].classList.add("controls__link--active");
+                    }
+                })
+            }
+        }
+
+
+        function isInViewport(elem) {
+            let bounding = elem.getBoundingClientRect();
+            return (
+                bounding.left >= 0 &&
+                bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
     }
 
     let menu = {
@@ -99,10 +136,10 @@ window.addEventListener('load', function () {
         let currentHref = window.location.href;
 
         links.forEach(link => {
-            if(currentHref == link.href) {
+            if (currentHref == link.href) {
                 link.classList.add("menu__link--active");
             }
-            else if(currentHref == link.href) {
+            else if (currentHref == link.href) {
                 link.classList.add("menu__link--active");
             }
         });
@@ -161,7 +198,7 @@ window.addEventListener('load', function () {
                         return false;
                     });
 
-                    if (fieldsWithErrors.length>0) {
+                    if (fieldsWithErrors.length > 0) {
                         e.preventDefault();
                         popups.showFailure();
                     }
@@ -185,6 +222,8 @@ window.addEventListener('load', function () {
     popups.addListeners();
 
     form.addListeners();
+
+    sliderNav();
 
     swipe(tableControls.table, handleSwipe);
 });
