@@ -1,7 +1,7 @@
 {
-  "name": "webpack-demo",
+  "name": "pink",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

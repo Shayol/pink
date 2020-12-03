@@ -36,7 +36,8 @@ module.exports = {
             loader: "html-loader",
             options: {
               minimize: true,
-              interpolate: true
+              interpolate: true,
+              attrs: ['img:src', 'source:srcset']
             }
           }
         ]
@@ -74,7 +75,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|svg)$/,
         use: {
           loader: "file-loader",
           options: {

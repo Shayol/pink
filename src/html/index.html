@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example</title>
+    <title>Index</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="hero">
+            <ul class="menu">
+                <li class="menu__item">
+                    <div class="wrapper">
+                        <a href="" class="menu__link">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="logo-desktop.png">
+                                <source media="(min-width: 660px)" srcset="logo-tablet.png">
+                                <img src="..img/logo-mobile.png" alt="logo" class="menu__logo">
+                            </picture>
+
+                        </a>
+                        <img src="../img/close.png" alt="" class="menu__close-icon">
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Фотографии</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Конкурс</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">HTML Academy</a>
+                </li>
+            </ul>
+            <div class="hero__picture">
+
+            </div>
+            <div class="hero__download download">
+                <div class="wrapper">
+                    <div class="download__button">Скачать приложение</div>
+                    <div class="download__os">
+                        <img src="" alt="" class="download__icon">
+                        <img src="" alt="" class="download__icon">
+                        <img src="" alt="" class="download__icon">
+                    </div>
+                    <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="wrapper">
+                <p class="section__text.section__text--big">Устали от серости
+                    <br class="break break--mobile"> мегаполиса?</p>
+                <p class="section__text.section__text--big">Нам есть, что вам
+                    <br> предложить!
+                </p>
+            </div>
+            <div class="section section--grey">
+                <div class="section__item">
+                    <h2 class="section__header">Поднимает настроение</h2>
+                    <p class="section__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </div>
+                <div class="section__item">
+                    <h2 class="section__header">Меняет мир вокруг</h2>
+                    <p class="section__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </div>
+                <div class="section__item">
+                    <h2 class="section__header">Заводит новых друзей</h2>
+                    <p class="section__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </div>
+            </div>
+        </div>
+        <div class="section review">
+            <div class="wrapper">
+
+                <div class="review__container">
+                    <div class="review__item">
+                        <div class="review__author">Николай Петров</div>
+                        <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще
+                            я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</div>
+                    </p>
+                </div>
+                <div class="review__controls controls">
+                    <a href="#review1" class="controls__link"></a>
+                    <a href="#review2" class="controls__link"></a>
+                    <a href="#review3" class="controls__link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section price">
+            <div class="table">
+
+                <div class="table__col" id="basic">
+                    <div class="table__header">
+                        <div class="price__name">База</div>
+                        <div class="price__number">1,99USD</div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Розовый фильтр</div>
+                        <div class="price__check"></div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Смайлики</div>
+                        <div class="price__check"></div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Комментарии</div>
+                        <div class="price__check"></div>
+                    </div>
+                </div>
+                <div class="table__col" id="standard">
+                    <div class="table__header">
+                        <div class="price__name">Стандарт</div>
+                        <div class="price__number">3,99USD</div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Розовый фильтр</div>
+                        <div class="price__check"></div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Смайлики</div>
+                        <div class="price__check"></div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Комментарии</div>
+                        <div class="price__check"></div>
+                    </div>
+                </div>
+                <div class="table__col" id="unlim">
+                    <div class="table__header">
+                        <div class="price__name"> Анлим</div>
+                        <div class="price__number">9,99USD</div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Розовый фильтр</div>
+                        <div class="price__check"></div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Смайлики</div>
+                        <div class="price__check"></div>
+                    </div>
+                    <div class="table__row">
+                        <div class="price__feature">Комментарии</div>
+                        <div class="price__check"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="price__controls controls">
+                <a href="#basic" class="controls__link"></a>
+                <a href="#standard" class="controls__link"></a>
+                <a href="#unlim" class="controls__link"></a>
+            </div>
+        </div>
+        <div class="section contacts">
+            <h2 class="section__header section__header--big">
+                Остались вопросы?
+                <br> Свяжитесь с нами!
+            </h2>
+            <div class="contacts__item">
+                <h2 class="section__header">Звоните</h2>
+                <p class="contacts__text">+7 (812) 555-66-66</p>
+            </div>
+            <div class="contacts__item">
+                <h2 class="section__header">Пишите</h2>
+                <p class="contacts__text">mail@htmlacademy.ru</p>
+            </div>
+            <div class="contacts__item">
+                <h2 class="section__header">Приезжайте в гости</h2>
+                <p class="contacts__text">ул. Большая
+                    <br> Конюшенная, 19/8</p>
+            </div>
+        </div>
+        <div class="section map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.715138862529!2d30.32166081609688!3d59.93686888187548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f7f31a34b%3A0x6b40733c997b156d!2z0J_QtdGC0YDQuNC60LjRgNGF0LU!5e0!3m2!1sen!2sua!4v1535232660659"
+                height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
+
 </html>
